@@ -44,10 +44,10 @@ SourceDateEpoch: 1641374271
 CPE-ID: cpe:/a:smt:mgw
 Maintainer: HaiBac Ngo <ngohaibac@gmail.com>
 Architecture: mipsel_24kc
-Installed-Size: 136590
+Installed-Size: 136511
 Filename: python3-mgw_2.2.12-1_mipsel_24kc.ipk
-Size: 137396
-SHA256sum: d353de002e08ab218b8888e9bf87a50478d54bbefa3237ade036cbd06b5ed409
+Size: 137311
+SHA256sum: a5bb38f8ae56fb2b5f537f126a5af89cb989d9c6e6c74b9c5aee0ffe8b7b6bc9
 Description:  Smatec M-Gateway
  .
  (Variant for Python3)
