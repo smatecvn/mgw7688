@@ -26,7 +26,7 @@ while getopts ":hu:" opt; do
       exit 0
       ;;
 	u )
-	  #Firmware Version 	
+	  # Firmware Version 	
 	  TESTER="$OPTARG" 
 	  ;;
 	  
