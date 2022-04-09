@@ -6,8 +6,8 @@
 
 # Download index.json file 
 
-#while true
-#do
+# while true
+# do
 # Validate
 if [ -z "$1" ]; then 
   echo "Usage:"
@@ -46,9 +46,9 @@ MGWID=$(echo "${INDEX_JSON_STR}" | awk '{print $1}')
 VCODE=$(echo "${INDEX_JSON_STR}" | awk '{print $2}')
 FW_VERSION=$(echo "${INDEX_JSON_STR}" | awk '{print $3}')
 SIM=$(echo "${INDEX_JSON_STR}" | awk '{print $4}')
-#VCODE=$(cat index.json | python3 -c "import json,sys;obj=json.load(sys.stdin);print(obj['vCode'])")
-#VERSION=$(cat index.json | python3 -c "import json,sys;obj=json.load(sys.stdin);print(obj['version'])")
-#SIM=$(cat index.json | python3 -c "import json,sys;obj=json.load(sys.stdin);print(obj['sim'])")
+# VCODE=$(cat index.json | python3 -c "import json,sys;obj=json.load(sys.stdin);print(obj['vCode'])")
+# VERSION=$(cat index.json | python3 -c "import json,sys;obj=json.load(sys.stdin);print(obj['version'])")
+# SIM=$(cat index.json | python3 -c "import json,sys;obj=json.load(sys.stdin);print(obj['sim'])")
 
 # Download gms .json file    
 echo "Download gms.json file..."
@@ -62,12 +62,12 @@ IMSI=$(echo "${GSM_JSON_STR}" | awk '{print $4}')
 OS_NAME=$(echo "$(cat /etc/config/system | grep 'os_version')" | awk '{print $3}' | sed "s/'//")
 OS_VERSION=$(echo "$(cat /etc/config/system | grep 'os_version')" | awk '{print $4}' | sed "s/'//")
 HOST_NAME=$(cat /proc/sys/kernel/hostname)
-#MODEL=$(cat gsm.json | python3 -c "import json,sys;obj=json.load(sys.stdin);print(obj['model'])")
-#REVISION=$(cat gsm.json | python3 -c "import json,sys;obj=json.load(sys.stdin);print(obj['revision'])")
-#IMSI=$(cat gsm.json | python3 -c "import json,sys;obj=json.load(sys.stdin);print(obj['imsi'])")   
+# MODEL=$(cat gsm.json | python3 -c "import json,sys;obj=json.load(sys.stdin);print(obj['model'])")
+# REVISION=$(cat gsm.json | python3 -c "import json,sys;obj=json.load(sys.stdin);print(obj['revision'])")
+# IMSI=$(cat gsm.json | python3 -c "import json,sys;obj=json.load(sys.stdin);print(obj['imsi'])")   
 RANDOM=$(date +%s)
 DATE=$(date "+%D %T")
-#echo $RANDOM
+# echo $RANDOM
 FILE="${TESTER}_${RANDOM}_${MGWID}.csv"
 
 echo "Create data file: ${FILE}"
