@@ -1,0 +1,305 @@
+Package: liblucihttp-lua
+Version: 2021-06-11-3dc89af4-1
+Depends: libc, liblucihttp0, liblua5.1.5
+Source: /home/smatec/work/archive-master/luci/contrib/package/lucihttp
+SourceName: liblucihttp-lua
+License: ISC
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1632308400
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 3495
+Filename: liblucihttp-lua_2021-06-11-3dc89af4-1_mipsel_24kc.ipk
+Size: 4288
+SHA256sum: fbeed4264cd2003bba178b4a4f64b02945eedd55be94f23173ce7f3651caa670
+Description:  Lua binding for the LuCI HTTP utility library
+
+Package: liblucihttp0
+Version: 2021-06-11-3dc89af4-1
+Depends: libc
+Provides: liblucihttp
+Source: /home/smatec/work/archive-master/luci/contrib/package/lucihttp
+SourceName: liblucihttp
+License: ISC
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1632308400
+ABIVersion: 0
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 6749
+Filename: liblucihttp0_2021-06-11-3dc89af4-1_mipsel_24kc.ipk
+Size: 7585
+SHA256sum: 92792881a90a64fb95a3e539e2c55f709293fc75b202b4bc48fa378456ed3aa2
+Description:  LuCI HTTP utility library
+
+Package: luci-app-firewall
+Version: git-21.265.39600-b5464a3
+Depends: libc, firewall
+Source: /home/smatec/work/archive-master/luci/applications/luci-app-firewall
+SourceName: luci-app-firewall
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1634488632
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 14199
+Filename: luci-app-firewall_git-21.265.39600-b5464a3_all.ipk
+Size: 15072
+SHA256sum: 25ea0b8cdc16c58135abe812d7857a118cd85dd8b748aceaf0dc3d59f595776b
+Description:  Firewall and Portforwarding application
+
+Package: luci-app-opkg
+Version: git-21.265.39600-b5464a3
+Depends: libc, opkg
+Source: /home/smatec/work/archive-master/luci/applications/luci-app-opkg
+SourceName: luci-app-opkg
+Section: luci
+SourceDateEpoch: 1634156663
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 8429
+Filename: luci-app-opkg_git-21.265.39600-b5464a3_all.ipk
+Size: 9328
+SHA256sum: 41989276d9e4508156a8e2dfffafc1f56571639e2db46f4ea9b6ec3ca847ce20
+Description:  OPKG package management application
+
+Package: luci-base
+Version: git-21.284.67084-e4d24f0
+Depends: libc, lua, luci-lib-nixio, luci-lib-ip, rpcd, libubus-lua, luci-lib-jsonc, liblucihttp-lua, luci-lib-base, rpcd-mod-file, rpcd-mod-luci, cgi-io
+Source: /home/smatec/work/archive-master/luci/modules/luci-base
+SourceName: luci-base
+License: MIT
+Section: luci
+SourceDateEpoch: 1634488632
+Maintainer: OpenWrt LuCI community
+Architecture: mipsel_24kc
+Installed-Size: 128773
+Filename: luci-base_git-21.284.67084-e4d24f0_mipsel_24kc.ipk
+Size: 129808
+SHA256sum: ffdd29510d7c4007a373dc4df5268440a8ffb5d1f441c280718bdbb9a89dec75
+Description:  LuCI core libraries
+
+Package: luci-lib-base
+Version: git-21.265.39600-b5464a3
+Depends: libc, lua, luci-lib-nixio, luci-lib-ip, luci-lib-jsonc, liblucihttp-lua
+Source: /home/smatec/work/archive-master/luci/libs/luci-lib-base
+SourceName: luci-lib-base
+Section: luci
+SourceDateEpoch: 1632308400
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 12496
+Filename: luci-lib-base_git-21.265.39600-b5464a3_all.ipk
+Size: 13386
+SHA256sum: e4e097c94252ffafb8bb04ebc5cdb90bd67503d21dccc8b62b52d91768d64cff
+Description:  basic libraries for luci
+
+Package: luci-lib-ip
+Version: git-21.265.39600-b5464a3
+Depends: libc, liblua5.1.5, libnl-tiny1
+Source: /home/smatec/work/archive-master/luci/libs/luci-lib-ip
+SourceName: luci-lib-ip
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1632308400
+Maintainer: OpenWrt LuCI community
+Architecture: mipsel_24kc
+Installed-Size: 10800
+Filename: luci-lib-ip_git-21.265.39600-b5464a3_mipsel_24kc.ipk
+Size: 11673
+SHA256sum: 97c7f2abb5adecb4924d5b73fa35cff92fae173b2004f7bdc6fa2b94b0506d75
+Description:  Lua library for IP calculation and routing information
+
+Package: luci-lib-jsonc
+Version: git-21.265.39600-b5464a3
+Depends: libc, liblua5.1.5, libjson-c5
+Source: /home/smatec/work/archive-master/luci/libs/luci-lib-jsonc
+SourceName: luci-lib-jsonc
+Section: luci
+SourceDateEpoch: 1632308400
+Maintainer: OpenWrt LuCI community
+Architecture: mipsel_24kc
+Installed-Size: 4327
+Filename: luci-lib-jsonc_git-21.265.39600-b5464a3_mipsel_24kc.ipk
+Size: 5188
+SHA256sum: 2c514a4e2fc945587b70a8511390975302ae6d05bc19e0cdcfbd1ec8b585d1ab
+Description:  Lua binding for JSON-C
+
+Package: luci-lib-nixio
+Version: git-21.265.39600-b5464a3
+Depends: libc, liblua5.1.5
+Source: /home/smatec/work/archive-master/luci/libs/luci-lib-nixio
+SourceName: luci-lib-nixio
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1632308400
+Maintainer: OpenWrt LuCI community
+Architecture: mipsel_24kc
+Installed-Size: 28002
+Filename: luci-lib-nixio_git-21.265.39600-b5464a3_mipsel_24kc.ipk
+Size: 28754
+SHA256sum: e146b966f01045fcc1d9a0f497ef4859b810e3de49929673cd2cf423bd4427e1
+Description:  NIXIO POSIX library
+
+Package: luci-mod-admin-full
+Version: git-21.265.39600-b5464a3
+Depends: libc, luci-base, luci-mod-status, luci-mod-system, luci-mod-network
+Source: /home/smatec/work/archive-master/luci/modules/luci-mod-admin-full
+SourceName: luci-mod-admin-full
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1632308400
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 105
+Filename: luci-mod-admin-full_git-21.265.39600-b5464a3_all.ipk
+Size: 1005
+SHA256sum: 7b0461071f912207fcb0db01ca1818abd1da5febf07bf1ddb6116b7f213a0a84
+Description:  LuCI Administration - full-featured for full control
+
+Package: luci-mod-network
+Version: git-21.285.33716-9aaebdf
+Depends: libc, luci-base, libiwinfo-lua, rpcd-mod-iwinfo
+Source: /home/smatec/work/archive-master/luci/modules/luci-mod-network
+SourceName: luci-mod-network
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1634030516
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 46599
+Filename: luci-mod-network_git-21.285.33716-9aaebdf_all.ipk
+Size: 47574
+SHA256sum: afb1849119bcc099da0e35e4dec54e755670eed53baae0b521ed4b777b745062
+Description:  LuCI Network Administration
+
+Package: luci-mod-status
+Version: git-21.265.39600-b5464a3
+Depends: libc, luci-base, libiwinfo20210430, libiwinfo-lua
+Source: /home/smatec/work/archive-master/luci/modules/luci-mod-status
+SourceName: luci-mod-status
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1632308400
+Maintainer: OpenWrt LuCI community
+Architecture: mipsel_24kc
+Installed-Size: 28684
+Filename: luci-mod-status_git-21.265.39600-b5464a3_mipsel_24kc.ipk
+Size: 29539
+SHA256sum: 8d04fc7ad94f02eed6377168930b29a17caeba4e15776fd5a202aa36112d8009
+Description:  LuCI Status Pages
+
+Package: luci-mod-system
+Version: git-21.271.74796-7c943a1
+Depends: libc, luci-base
+Source: /home/smatec/work/archive-master/luci/modules/luci-mod-system
+SourceName: luci-mod-system
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1632861996
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 17973
+Filename: luci-mod-system_git-21.271.74796-7c943a1_all.ipk
+Size: 18896
+SHA256sum: d83a13135e4c037155de139dbae1f4707ba03abdbc28bc933a31596f9ab71587
+Description:  LuCI Administration - Global System Settings
+
+Package: luci-proto-ipv6
+Version: git-21.265.39600-b5464a3
+Depends: libc
+Source: /home/smatec/work/archive-master/luci/protocols/luci-proto-ipv6
+SourceName: luci-proto-ipv6
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1632308400
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 2597
+Filename: luci-proto-ipv6_git-21.265.39600-b5464a3_all.ipk
+Size: 3506
+SHA256sum: 86b81093722af7aeea8fdb051b9154caa21dd3f33cb91773844ca1c7ad738030
+Description:  Support for DHCPv6/6in4/6to4/6rd/DS-Lite
+
+Package: luci-proto-ppp
+Version: git-21.265.39600-b5464a3
+Depends: libc
+Source: /home/smatec/work/archive-master/luci/protocols/luci-proto-ppp
+SourceName: luci-proto-ppp
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1632308400
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 2209
+Filename: luci-proto-ppp_git-21.265.39600-b5464a3_all.ipk
+Size: 3064
+SHA256sum: cf2794709d98d5e6597055777daf1ab6f7ec3777b6a8795f7f1f1fff91000222
+Description:  Support for PPP/PPPoE/PPPoA/PPtP
+
+Package: luci-theme-bootstrap
+Version: git-21.283.63931-588e24f
+Depends: libc
+Source: /home/smatec/work/archive-master/luci/themes/luci-theme-bootstrap
+SourceName: luci-theme-bootstrap
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1633887931
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 14008
+Filename: luci-theme-bootstrap_git-21.283.63931-588e24f_all.ipk
+Size: 14872
+SHA256sum: a501593c7b53030bcce7c92b07983e92838fe72d15dc94dbd3cc5f532d103774
+Description:  Bootstrap Theme (default)
+
+Package: luci
+Version: git-21.265.39600-b5464a3
+Depends: libc, uhttpd, uhttpd-mod-ubus, luci-mod-admin-full, luci-theme-bootstrap, luci-app-firewall, luci-app-opkg, luci-proto-ppp, libiwinfo-lua, luci-proto-ipv6, rpcd-mod-rrdns
+Source: /home/smatec/work/archive-master/luci/collections/luci
+SourceName: luci
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1632308400
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 105
+Filename: luci_git-21.265.39600-b5464a3_all.ipk
+Size: 1091
+SHA256sum: a6a4702a52ed773700ae35b82721838c74afbbdaaf8d8ea676f04598c9c381f0
+Description:  Standard OpenWrt set including full admin with ppp support and the default Bootstrap theme
+
+Package: rpcd-mod-luci
+Version: 20210614
+Depends: libc, rpcd, libubox20210819, libubus20210630, libnl-tiny1
+Source: /home/smatec/work/archive-master/luci/libs/rpcd-mod-luci
+SourceName: rpcd-mod-luci
+License: Apache-2.0
+Section: libs
+SourceDateEpoch: 1632308400
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 12529
+Filename: rpcd-mod-luci_20210614_mipsel_24kc.ipk
+Size: 13406
+SHA256sum: aa55ce435bc6f6f44e9718c437a820a95811c8fe8c37010692341bd16d7ba9ab
+Description:  Provides LuCI backend ubus RPC operations.
+
+Package: rpcd-mod-rrdns
+Version: 20170710
+Depends: libc, rpcd, libubox20210819, libubus20210630
+Source: /home/smatec/work/archive-master/luci/libs/rpcd-mod-rrdns
+SourceName: rpcd-mod-rrdns
+License: Apache-2.0
+Section: libs
+SourceDateEpoch: 1632308400
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 3877
+Filename: rpcd-mod-rrdns_20170710_mipsel_24kc.ipk
+Size: 4724
+SHA256sum: eba070db029369c480dee894738c7de3d0b8f867cddcb5ed347762c0115e6319
+Description:  Provides rapid mass reverse DNS lookup functionality.
+
