@@ -1,0 +1,5 @@
+src-link packages /home/smatec/work/archive-master/packages
+src-link luci /home/smatec/work/archive-master/luci
+src-link routing /home/smatec/work/archive-master/routing
+src-link telephony /home/smatec/work/archive-master/telephony
+src-link smatec /home/smatec/work/archive-master/smatec
