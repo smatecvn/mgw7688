@@ -1,0 +1,56 @@
+Package: mgw7688-os
+Version: 1
+Depends: libc, curl, strace, coreutils, coreutils-stty, coreutils-timeout, avahi-dbus-daemon, kmod-fs-vfat, dosfstools, rpcd, rpcd-mod-iwinfo, rpcd-mod-rpcsys, kmod-mt76, picocom, kmod-i2c-core, kmod-i2c-mt7628, cgi-io, uboot-envtools, kmod-sdhci-mt7620, kmod-usb-storage, usbutils, block-mount, kmod-video-core, kmod-video-uvc, kmod-sound-core, kmod-sound-mt7620, madplay, alsa-utils, comgt, usb-modeswitch, kmod-mii, kmod-usb-wdm, kmod-usb-net-qmi-wwan, kmod-usb-net-rndis, uqmi, kmod-usb-serial, kmod-usb-serial-option, kmod-usb-serial-wwan, python3, libmraa-python3, python3-pyaudio, python3-alsaaudio, python3-paho-mqtt, ffmpeg, mpd, mpc, python3-flask, python3-requests, python3-flask-httpauth, python3-mgw, htop, tcpdump-mini, netcat, python3-pyserial
+Section: utils
+Architecture: mipsel_24kc
+Installed-Size: 13865
+Filename: mgw7688-os_1_mipsel_24kc.ipk
+Size: 14897
+SHA256sum: 92e3c7c80c8286c4191edc6cab87a13562be312b25f4b7ed91b69abeb4c3b604
+Description:  MGW7688 Board Support Package
+
+Package: python3-alsaaudio
+Version: 0.8.4-1
+Depends: libc, python3, alsa-lib
+License: Python Software Foundation License (PSF)
+Section: lang
+CPE-ID: cpe:/a:larsimmisch:pyalsaaudio
+Architecture: mipsel_24kc
+Installed-Size: 15944
+Filename: python3-alsaaudio_0.8.4-1_mipsel_24kc.ipk
+Size: 16725
+SHA256sum: 09ce11c0f1db059191a1c36a6e9f409d721c621e5361835d17abf5935981bae1
+Description:  ALSA wrappers for Python
+ .
+ (Variant for Python3)
+
+Package: python3-mgw
+Version: 2.2.12-1
+Depends: libc, python3
+License: Python Software Foundation License (PSF)
+Section: lang
+CPE-ID: cpe:/a:smt:mgw
+Architecture: mipsel_24kc
+Installed-Size: 171869
+Filename: python3-mgw_2.2.12-1_mipsel_24kc.ipk
+Size: 172734
+SHA256sum: bab2c016a83dc7121845d2e5ab276e80c47c4f8d3eeddfdfb4b1ef58ff4f0014
+Description:  Smatec M-Gateway
+ .
+ (Variant for Python3)
+
+Package: python3-pyaudio
+Version: 0.2.11-1
+Depends: libc, python3, portaudio, python3-setuptools
+License: MIT License
+Section: lang
+CPE-ID: cpe:/a:hubert:pyaudio
+Architecture: mipsel_24kc
+Installed-Size: 19369
+Filename: python3-pyaudio_0.2.11-1_mipsel_24kc.ipk
+Size: 20230
+SHA256sum: 0a0c22b6d5c2208776d0077e06f411efe1974cf43b162d2ea6b4d1f0ff5e3454
+Description:  
+ .
+ (Variant for Python3)
+
