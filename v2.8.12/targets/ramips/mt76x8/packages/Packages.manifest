@@ -1271,10 +1271,10 @@ License: GPL-2.0
 Section: kernel
 SourceDateEpoch: 1631545910
 Architecture: mipsel_24kc
-Installed-Size: 21336
+Installed-Size: 21354
 Filename: kmod-sound-mt7620_5.4.145-1_mipsel_24kc.ipk
-Size: 22023
-SHA256sum: 8151d957444213ca66220df57eeb31f41d411ebdf0ff836589990ea1d6a75497
+Size: 22045
+SHA256sum: eb9236dbc02de6b828416c01f4ec6ca011f7128ccca9ad3b94af996a11c317bb
 Description:  Alsa modules for ralink i2s controller.
 
 Package: kmod-sound-soc-core
