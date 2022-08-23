@@ -34,7 +34,7 @@ iw - 5.9-8fab0c9e-3
 iwinfo - 2021-07-11-a0a0e02d-1
 jshn - 2021-08-19-d716ac4b-2
 jsonfilter - 2018-02-04-c7e938d6-1
-kernel - 5.4.145-1-26c63cfd645e79709c3e2552552cbf1d
+kernel - 5.4.145-1-efc8c254695985d1c26ea03f17ea2e38
 kmod-ac97 - 5.4.145-1
 kmod-cfg80211 - 5.4.145+5.10.68-1-1
 kmod-crypto-aead - 5.4.145-1
@@ -95,6 +95,7 @@ kmod-pppoe - 5.4.145-1
 kmod-pppox - 5.4.145-1
 kmod-regmap-core - 5.4.145-1
 kmod-regmap-i2c - 5.4.145-1
+kmod-rtc-pcf8563 - 5.4.145-1
 kmod-scsi-core - 5.4.145-1
 kmod-sdhci-mt7620 - 5.4.145-1
 kmod-slhc - 5.4.145-1

@@ -65,10 +65,10 @@ Require-User: dnsmasq=453:dnsmasq=453
 SourceDateEpoch: 1631645780
 CPE-ID: cpe:/a:thekelleys:dnsmasq
 Architecture: mipsel_24kc
-Installed-Size: 126710
+Installed-Size: 126723
 Filename: dnsmasq_2.86-2_mipsel_24kc.ipk
-Size: 127358
-SHA256sum: 98d3635edb233ae188250f9c8c1f8526da50d94ed0f5f2d2a04aaf5173eb4286
+Size: 127334
+SHA256sum: 515e9ee97f6a41badd0a6e2256dd7f57b96d264669d5da727f5e9f9765fe81f4
 Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
 
 Package: e2fsprogs
