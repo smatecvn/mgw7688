@@ -1036,10 +1036,10 @@ Section: sound
 Require-User: mpd:mpd
 SourceDateEpoch: 1632558006
 Architecture: mipsel_24kc
-Installed-Size: 446722
+Installed-Size: 456366
 Filename: mpd-full_0.22.11-1_mipsel_24kc.ipk
-Size: 446719
-SHA256sum: b0dc3afc3bdaf4e6ac94f220526b2465ef44322f1fbfc43a7bb3ea90e73a9c87
+Size: 456154
+SHA256sum: 13e57ec171086ceb6d85719fd4e501020a563fd999c1435694d860d897adfaa1
 Description:  Music Player Daemon (MPD) is a flexible, powerful, server-side
  application for playing music. It is typically controlled over a
  network using one of it's many clients including mpc (console),
