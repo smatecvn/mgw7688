@@ -4,10 +4,10 @@ Depends: libc, netifd, jsonfilter, usign, openwrt-keyring, fstools, fwtool
 License: GPL-2.0
 Section: base
 Architecture: mipsel_24kc
-Installed-Size: 45865
+Installed-Size: 45768
 Filename: base-files_211117.45152-unknown_mipsel_24kc.ipk
-Size: 46813
-SHA256sum: d65cc11597ef6abf2522766746ed8317d242a2b70240436c405d33623ac88741
+Size: 46724
+SHA256sum: 6249ef84bd44a9d97e21a5581b4ae204ce083f026a07a37221a497c3b4770073
 Description:  This package contains a base filesystem and system scripts for OpenWrt.
 
 Package: block-mount
