@@ -7,10 +7,10 @@ License: GPL-2.0
 Section: base
 SourceDateEpoch: 1637152352
 Architecture: mipsel_24kc
-Installed-Size: 45829
+Installed-Size: 45865
 Filename: base-files_211117.45152-unknown_mipsel_24kc.ipk
-Size: 46777
-SHA256sum: fe6cc8368ebabc6cde2a5ea526eb099a07d62667fce0128c10780744d03b7e14
+Size: 46813
+SHA256sum: d65cc11597ef6abf2522766746ed8317d242a2b70240436c405d33623ac88741
 Description:  This package contains a base filesystem and system scripts for OpenWrt.
 
 Package: block-mount

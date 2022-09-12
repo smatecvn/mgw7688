@@ -286,10 +286,10 @@ SourceDateEpoch: 1632375478
 CPE-ID: cpe:/a:ffmpeg:ffmpeg
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 Architecture: mipsel_24kc
-Installed-Size: 98492
+Installed-Size: 98330
 Filename: ffmpeg_4.3.2-1_mipsel_24kc.ipk
-Size: 99478
-SHA256sum: f48993dc0f26cdc4306a87755f67e682984bf1a514dea1a9a93cb071d4e15149
+Size: 99333
+SHA256sum: 507873448e60f218b1a671fff288e8f0c6fa15f71824dd026d1eb712f4b150a4
 Description:  FFmpeg is a a software package that can record, convert and stream digital
  audio and video in numerous formats.
  
@@ -528,7 +528,7 @@ Description:  The libffi library provides a portable, high level programming int
 
 Package: libffmpeg-full
 Version: 4.3.2-1
-Depends: libc, libpthread, libpthread, zlib, libbz2-1.0, alsa-lib, libgnutls, libopus, shine, libx264
+Depends: libc, libpthread, libpthread, zlib, libbz2-1.0, alsa-lib, libgnutls, libopus, shine, fdk-aac
 Provides: libffmpeg
 Source: /home/user/archive-master/packages/multimedia/ffmpeg
 SourceName: libffmpeg-full
@@ -539,10 +539,10 @@ SourceDateEpoch: 1632375478
 CPE-ID: cpe:/a:ffmpeg:ffmpeg
 Maintainer: Ted Hess <thess@kitschensync.net>, Ian Leonard <antonlacon@gmail.com>
 Architecture: mipsel_24kc
-Installed-Size: 6388147
+Installed-Size: 6283428
 Filename: libffmpeg-full_4.3.2-1_mipsel_24kc.ipk
-Size: 6364338
-SHA256sum: 1a6a21a99e1618f6054fcf8e5a78f087ab09b73ccd876f26ce36b955a06c4211
+Size: 6260170
+SHA256sum: 9f6492b4d6e8fb76d2bc4ceae5b4c09ff0829a7f3416298a548153348c7f2197
 Description:  FFmpeg is a a software package that can record, convert and stream digital
  audio and video in numerous formats.
  
