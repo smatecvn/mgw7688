@@ -226,6 +226,7 @@ mpd-full - 0.22.11-1
 mtd - 26
 netcat - 0.7.1-2
 netifd - 2021-09-21-08e954e1-1
+netperf - 2.7.0-2
 odhcp6c - 2021-07-14-94adc8bb-18
 odhcpd-ipv6only - 2021-08-11-01b4e604-211117.45152
 openwrt-keyring - 2021-02-20-49283916-2
@@ -285,6 +286,7 @@ rpcd-mod-luci - 20210614
 rpcd-mod-rpcsys - 2021-07-13-1fa35765-1
 rpcd-mod-rrdns - 20170710
 shine - 3.1.1-1
+speedtest-netperf - 1.0.0-1
 strace - 5.10-1
 swconfig - 12
 tailscale - 1.12.3-1

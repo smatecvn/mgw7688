@@ -1083,6 +1083,23 @@ SHA256sum: 119067c9bf85bdba523525a516445ed1d4fbb8692e38d9d70b8b2c844e02220c
 Description:  Netcat is a featured networking utility which reads and writes data across network connections, using the TCP/IP protocol.
  It is designed to be a reliable "back-end" tool that can be used directly or easily driven by other programs and scripts. At the same time, it is a feature-rich network debugging and exploration tool, since it can create almost any kind of connection you would need and has several interesting built-in capabilities.
 
+Package: netperf
+Version: 2.7.0-2
+Depends: libc
+Source: /home/user/archive-master/packages/net/netperf
+SourceName: netperf
+License: Custom
+Section: net
+SourceDateEpoch: 1632375478
+CPE-ID: cpe:/a:netperf:netperf
+Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
+Architecture: mipsel_24kc
+Installed-Size: 130244
+Filename: netperf_2.7.0-2_mipsel_24kc.ipk
+Size: 131091
+SHA256sum: 2c1fee44c40716a7a09d0296e646ef40630d57326db2abdcc7b01a12ef560196
+Description:  Network performance measurement tool
+
 Package: picocom
 Version: 3.1-5
 Depends: libc
@@ -1862,6 +1879,25 @@ Description:  savonet/shine is a blazing fast mp3 encoding library implemented i
  arithmetic. The library can thus be used to perform super fast mp3 encoding on
  architectures without a FPU, such as armel, etc.. It is also, however, also
  super fast on architectures with a FPU!
+
+Package: speedtest-netperf
+Version: 1.0.0-1
+Depends: libc, netperf
+Conflicts: speedtest
+Source: /home/user/archive-master/packages/net/speedtest-netperf
+SourceName: speedtest-netperf
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1632375478
+Maintainer: Tony Ambardar <itugrok@yahoo.com>
+Architecture: all
+Installed-Size: 4884
+Filename: speedtest-netperf_1.0.0-1_all.ipk
+Size: 5729
+SHA256sum: a98b62afcb69a672b048d9f7176d77bb8f83c6d284526eddb32dbb0738902fe4
+Description:  Script to measure the performance of your network and router.
+ 
+ Please see https://github.com/openwrt/packages/blob/master/net/speedtest-netperf/files/README.md for further information.
 
 Package: tailscale
 Version: 1.12.3-1
