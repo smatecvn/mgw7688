@@ -810,15 +810,15 @@ Description:  MPD is a music player supporting flac, mp3 and ogg files.
 
 Package: mpd-full
 Version: 0.22.11-1
-Depends: libc, zlib, libcurl4, libpthread, libmpdclient, boost, alsa-lib, libexpat, libflac, libid3tag, libfaad2, libopus, pulseaudio-daemon, libvorbis, libmms, libupnp, libshout, yajl, libffmpeg, lame-lib
+Depends: libc, zlib, libcurl4, libpthread, libmpdclient, boost, alsa-lib, libexpat, libflac, libid3tag, libfaad2, libopus, pulseaudio-daemon, libvorbis, libmms, libupnp, libshout, yajl, libffmpeg, lame-lib, libmad
 Provides: mpd
 License: GPL-2.0-or-later
 Section: sound
 Architecture: mipsel_24kc
-Installed-Size: 450487
+Installed-Size: 456366
 Filename: mpd-full_0.22.11-1_mipsel_24kc.ipk
-Size: 450573
-SHA256sum: e1ea3756eb9a1b141f24734531b101db1b176f44219cd4c51320070648dc0f5d
+Size: 456154
+SHA256sum: 13e57ec171086ceb6d85719fd4e501020a563fd999c1435694d860d897adfaa1
 Description:  Music Player Daemon (MPD) is a flexible, powerful, server-side
  application for playing music. It is typically controlled over a
  network using one of it's many clients including mpc (console),
