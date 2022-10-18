@@ -6,10 +6,10 @@ SourceName: mgw7688-os
 Section: utils
 SourceDateEpoch: 1622679011
 Architecture: mipsel_24kc
-Installed-Size: 13837
+Installed-Size: 13858
 Filename: mgw7688-os_1_mipsel_24kc.ipk
-Size: 14891
-SHA256sum: 5888ae9c1d7e4f2176f3fe6bbec10957ad0386167bed45494d28c1adb66b399b
+Size: 14911
+SHA256sum: 6db95800dd5ceb6f0f913edc2280c0012838206926da53872965cb53a236c35a
 Description:  MGW7688 Board Support Package
 
 Package: python3-alsaaudio
@@ -44,10 +44,10 @@ SourceDateEpoch: 1641374271
 CPE-ID: cpe:/a:smt:mgw
 Maintainer: HaiBac Ngo <ngohaibac@gmail.com>
 Architecture: mipsel_24kc
-Installed-Size: 228943
+Installed-Size: 228947
 Filename: python3-mgw_2.2.12-1_mipsel_24kc.ipk
-Size: 229765
-SHA256sum: aca7c35ed991309cf2c2ece322697ed09e4d0d308220167440614cc3521a91f7
+Size: 229764
+SHA256sum: b4be3bf2b1f7e5c9d300edaa9a947ce5e07000c53f91e24fccc7beae55f46178
 Description:  Smatec M-Gateway
  .
  (Variant for Python3)
