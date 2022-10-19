@@ -3,10 +3,10 @@ Version: 1
 Depends: libc, curl, strace, coreutils, coreutils-stty, coreutils-timeout, avahi-dbus-daemon, kmod-fs-vfat, dosfstools, rpcd, rpcd-mod-iwinfo, rpcd-mod-rpcsys, kmod-mt76, picocom, kmod-i2c-core, kmod-i2c-mt7628, cgi-io, uboot-envtools, kmod-sdhci-mt7620, kmod-usb-storage, usbutils, block-mount, kmod-video-core, kmod-video-uvc, kmod-sound-core, kmod-sound-mt7620, madplay, alsa-utils, comgt, usb-modeswitch, kmod-mii, kmod-usb-wdm, kmod-usb-net-qmi-wwan, kmod-usb-net-rndis, uqmi, kmod-usb-serial, kmod-usb-serial-option, kmod-usb-serial-wwan, python3, libmraa-python3, python3-pyaudio, python3-alsaaudio, python3-paho-mqtt, ffmpeg, mpd, mpc, python3-flask, python3-requests, python3-flask-httpauth, python3-mgw, htop, tcpdump-mini, netcat, python3-pyserial
 Section: utils
 Architecture: mipsel_24kc
-Installed-Size: 14150
+Installed-Size: 13885
 Filename: mgw7688-os_1_mipsel_24kc.ipk
-Size: 15190
-SHA256sum: ac7f0a0f8e3cb48dc175f23db53c64aee7fa90d28196a6aa2b9238a5ef2f8fce
+Size: 14942
+SHA256sum: 2ad471ca49b0196082c41b058ed0918b75079be25025f309cce211cced24743b
 Description:  MGW7688 Board Support Package
 
 Package: python3-alsaaudio
@@ -16,10 +16,10 @@ License: Python Software Foundation License (PSF)
 Section: lang
 CPE-ID: cpe:/a:larsimmisch:pyalsaaudio
 Architecture: mipsel_24kc
-Installed-Size: 15944
+Installed-Size: 15946
 Filename: python3-alsaaudio_0.8.4-1_mipsel_24kc.ipk
-Size: 16725
-SHA256sum: 09ce11c0f1db059191a1c36a6e9f409d721c621e5361835d17abf5935981bae1
+Size: 16733
+SHA256sum: 78cf1adb82c3a35502b847bfbaa96ef32a27ec3b419cde99f4ca19d4d64b2ac5
 Description:  ALSA wrappers for Python
  .
  (Variant for Python3)
@@ -31,10 +31,10 @@ License: Python Software Foundation License (PSF)
 Section: lang
 CPE-ID: cpe:/a:smt:mgw
 Architecture: mipsel_24kc
-Installed-Size: 228706
+Installed-Size: 228947
 Filename: python3-mgw_2.2.12-1_mipsel_24kc.ipk
-Size: 229522
-SHA256sum: 1fd555fd68beb777419c9382c7852fb68ab07b72e30e9aa38ea38d74c937189c
+Size: 229764
+SHA256sum: b4be3bf2b1f7e5c9d300edaa9a947ce5e07000c53f91e24fccc7beae55f46178
 Description:  Smatec M-Gateway
  .
  (Variant for Python3)
@@ -46,10 +46,10 @@ License: MIT License
 Section: lang
 CPE-ID: cpe:/a:hubert:pyaudio
 Architecture: mipsel_24kc
-Installed-Size: 19363
+Installed-Size: 19367
 Filename: python3-pyaudio_0.2.11-1_mipsel_24kc.ipk
-Size: 20218
-SHA256sum: 11f4a0c4ef9ae798ffc18f319df78801422f9b9525487137a77bab3121fd707d
+Size: 20223
+SHA256sum: 84edc3d67f5d9e6db0194972f0bccb35d1b3ff200db65e93f9ebcf89111a55ee
 Description:  
  .
  (Variant for Python3)
