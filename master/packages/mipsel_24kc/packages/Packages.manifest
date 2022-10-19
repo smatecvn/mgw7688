@@ -1930,8 +1930,8 @@ Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
 Architecture: mipsel_24kc
 Installed-Size: 4102785
 Filename: tailscaled_1.12.3-1_mipsel_24kc.ipk
-Size: 4097642
-SHA256sum: 1d40ad3950f77f3b55708741ecb11a925cb1732ed67ff3d299dbc70582a83e5e
+Size: 4097640
+SHA256sum: f2a0bd6fff6ede2ec79b5a5325404d59666f624acfd050df2d9b3173769fb326
 Description:  It creates a secure network between your servers, computers,
  and cloud instances. Even when separated by firewalls or subnets.
 
