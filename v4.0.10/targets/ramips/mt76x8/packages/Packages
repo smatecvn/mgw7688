@@ -971,7 +971,7 @@ Architecture: mipsel_24kc
 Installed-Size: 2204
 Filename: kmod-sound-mt762x-wm8960_5.4.145-1_mipsel_24kc.ipk
 Size: 3011
-SHA256sum: 388a09643da1eff870c1a5c04c6a046f1233b2bdcfacb068ac4456beabfff728
+SHA256sum: 1d9cb7ff6198173b5c6d38221da62c72e4080874997cca9a499321ebf292954f
 Description:  MT762X WM8960 ALSA SoC Machine Driver
 
 Package: kmod-sound-soc-core

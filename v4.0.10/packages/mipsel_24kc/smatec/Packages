@@ -46,10 +46,10 @@ License: MIT License
 Section: lang
 CPE-ID: cpe:/a:hubert:pyaudio
 Architecture: mipsel_24kc
-Installed-Size: 19369
+Installed-Size: 19367
 Filename: python3-pyaudio_0.2.11-1_mipsel_24kc.ipk
-Size: 20226
-SHA256sum: 6269862930e59b71f89b61278144eb4662f8beee028da234e6cdda82ece7a04a
+Size: 20223
+SHA256sum: 2277d44868defde470247c4a0b75fe682981c0a448842ada26af23e9d698e6bb
 Description:  
  .
  (Variant for Python3)
