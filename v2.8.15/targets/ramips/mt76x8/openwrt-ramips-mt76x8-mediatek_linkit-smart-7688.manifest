@@ -218,6 +218,7 @@ luci-mod-status - git-21.265.39600-b5464a3
 luci-mod-system - git-21.271.74796-7c943a1
 luci-proto-ipv6 - git-21.265.39600-b5464a3
 luci-proto-ppp - git-21.265.39600-b5464a3
+luci-proto-qmi - git-21.265.39600-b5464a3
 luci-theme-bootstrap - git-21.283.63931-588e24f
 madplay - 0.15.2b-10
 mgw7688-os - 1
