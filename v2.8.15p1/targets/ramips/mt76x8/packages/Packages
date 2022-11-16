@@ -1352,10 +1352,10 @@ Depends: libc, libubox20210819, libblobmsg-json20210819, kmod-usb-net, kmod-usb-
 License: GPL-2.0
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 23422
+Installed-Size: 23450
 Filename: uqmi_2020-11-22-0a19b5b7-3_mipsel_24kc.ipk
-Size: 24223
-SHA256sum: 183222783f5d67fbf77ecaf773f27e54bdf889439fb14c3d7dc669cec2438fb3
+Size: 24261
+SHA256sum: 82c2cda7c42f29acde042ee2dc9ea3e51ad092e7ec010aeb2e5c5551b7ca46c7
 Description:  uqmi is a command line tool for controlling mobile broadband modems using
  the QMI-protocol.
 
