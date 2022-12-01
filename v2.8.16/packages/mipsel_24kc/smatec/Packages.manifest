@@ -6,10 +6,10 @@ SourceName: mgw7688-os
 Section: utils
 SourceDateEpoch: 1622679011
 Architecture: mipsel_24kc
-Installed-Size: 16486
+Installed-Size: 16524
 Filename: mgw7688-os_1_mipsel_24kc.ipk
-Size: 17459
-SHA256sum: 5d6f88c4bec215fac6bfb61c9e85c26e667f5ed15b7c29c39ce9e42ca1a65982
+Size: 17500
+SHA256sum: 1f3a8abf1ae41c4eccdbdb507c2b8f7110f7231deed0cc93c1a7384072ceb832
 Description:  MGW7688 Board Support Package
 
 Package: python3-alsaaudio
@@ -55,19 +55,19 @@ Description:  Smatec M-Gateway
 Package: python3-pyaudio
 Version: 0.2.11-1
 Depends: libc, python3, portaudio, python3-setuptools
-Source: /home/user/archive-master-mira/smatec/python-pyaudio
+Source: /home/user/archive-master-mira/packages/lang/python/ls
 SourceName: python3-pyaudio
 License: MIT License
 LicenseFiles: LICENSE.rst
 Section: lang
-SourceDateEpoch: 1622679011
+SourceDateEpoch: 1637152352
 CPE-ID: cpe:/a:hubert:pyaudio
 Maintainer: HaiBac Ngo <ngohaibac@gmail.com>
 Architecture: mipsel_24kc
-Installed-Size: 19369
+Installed-Size: 19367
 Filename: python3-pyaudio_0.2.11-1_mipsel_24kc.ipk
-Size: 20229
-SHA256sum: b11d69ed9b2280313b3f705109ae5dcab213e531886425aaf204e5d832861568
+Size: 20231
+SHA256sum: 336a39e16fda87067564301692a098820e94f36bdbfbdef253ffa3437d9276e8
 Description:  
  .
  (Variant for Python3)
