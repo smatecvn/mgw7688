@@ -44,10 +44,10 @@ SourceDateEpoch: 1641374271
 CPE-ID: cpe:/a:smt:mgw
 Maintainer: HaiBac Ngo <ngohaibac@gmail.com>
 Architecture: mipsel_24kc
-Installed-Size: 245095
+Installed-Size: 245115
 Filename: python3-mgw_2.2.12-1_mipsel_24kc.ipk
-Size: 245928
-SHA256sum: 57020ca2d4d23118e198e1b2eae82ccd97523d996b4b1db3bd60e19ca8e7f071
+Size: 245950
+SHA256sum: 8ae87e0519a32cf5cc30862492e13830a01d2708f195432fc35e934ac003a6c1
 Description:  Smatec M-Gateway
  .
  (Variant for Python3)
@@ -55,19 +55,19 @@ Description:  Smatec M-Gateway
 Package: python3-pyaudio
 Version: 0.2.11-1
 Depends: libc, python3, portaudio, python3-setuptools
-Source: /home/user/archive-master-mira/packages/lang/python/ls
+Source: /home/user/archive-master-mira/smatec/python-pyaudio
 SourceName: python3-pyaudio
 License: MIT License
 LicenseFiles: LICENSE.rst
 Section: lang
-SourceDateEpoch: 1637152352
+SourceDateEpoch: 1622679011
 CPE-ID: cpe:/a:hubert:pyaudio
 Maintainer: HaiBac Ngo <ngohaibac@gmail.com>
 Architecture: mipsel_24kc
-Installed-Size: 19367
+Installed-Size: 19369
 Filename: python3-pyaudio_0.2.11-1_mipsel_24kc.ipk
-Size: 20231
-SHA256sum: 336a39e16fda87067564301692a098820e94f36bdbfbdef253ffa3437d9276e8
+Size: 20229
+SHA256sum: b11d69ed9b2280313b3f705109ae5dcab213e531886425aaf204e5d832861568
 Description:  
  .
  (Variant for Python3)

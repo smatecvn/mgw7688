@@ -626,10 +626,10 @@ Depends: libc, libstdcpp6, libjson-c5
 License: MIT
 Section: libs
 Architecture: mipsel_24kc
-Installed-Size: 64391
+Installed-Size: 64388
 Filename: libmraa_2.2.0-3_mipsel_24kc.ipk
-Size: 65434
-SHA256sum: f5f696e655ac5a35d07bce7ba555e12601942907d6d7b462bb1fa8d0bcb7846a
+Size: 65397
+SHA256sum: e3b0c80f9a1dfb64b69e8c593747af6e94f56e2552db28903e9c6f804ee04351
 Description:  Libmraa is a C/C++ library with bindings to Java, Python and JavaScript to interface
  with the IO on Galileo, Edison & other platforms, with a structured and sane API where
  port names/numbering matches the board that you are on. Use of libmraa does not tie you
@@ -942,8 +942,8 @@ CPE-ID: cpe:/a:python:python
 Architecture: mipsel_24kc
 Installed-Size: 144151
 Filename: python3-asyncio_3.9.7-2_mipsel_24kc.ipk
-Size: 145179
-SHA256sum: e4e40848b951fe2971ba6a90ddd318245079b7377ac3495cfc58e7666fbdba61
+Size: 145178
+SHA256sum: 751da47caba65acb5aa771fbd0443d941cc4b0b704d6921533aac1c19d83d094
 Description:  Python 3.9 asyncio module
 
 Package: python3-base
@@ -1082,10 +1082,10 @@ License: Python/2.0
 Section: lang
 CPE-ID: cpe:/a:python:python
 Architecture: mipsel_24kc
-Installed-Size: 175812
+Installed-Size: 175811
 Filename: python3-distutils_3.9.7-2_mipsel_24kc.ipk
-Size: 176844
-SHA256sum: 383fdddb556b94da74614b37e395d9979fa84bd6ed7c571e327e1ad3e9d8770a
+Size: 176847
+SHA256sum: eee64e2d80c5647eda66d9012b2e43ad855269abba7fd101802ea49aa1232b58
 Description:  Python 3.9 distutils module
 
 Package: python3-email
@@ -1095,10 +1095,10 @@ License: Python/2.0
 Section: lang
 CPE-ID: cpe:/a:python:python
 Architecture: mipsel_24kc
-Installed-Size: 113057
+Installed-Size: 113056
 Filename: python3-email_3.9.7-2_mipsel_24kc.ipk
-Size: 114092
-SHA256sum: ecc295460337cdc8662cdc3e718dff84a1a0157a8dc84ed7b8a78367c61117a3
+Size: 114096
+SHA256sum: 07eb3253d2c65728927eda0392192418026bf69127a9d297b14e551a5af73a7f
 Description:  Python 3.9 email module
 
 Package: python3-flask-httpauth
@@ -1177,10 +1177,10 @@ License: Python/2.0
 Section: lang
 CPE-ID: cpe:/a:python:python
 Architecture: mipsel_24kc
-Installed-Size: 1852886
+Installed-Size: 1852894
 Filename: python3-light_3.9.7-2_mipsel_24kc.ipk
 Size: 1853642
-SHA256sum: a8cb86fba948bd224a4ff0ef9748959f98a5d972c139ca05498b9a7df8f6511f
+SHA256sum: face1a64f17d55462cdb35067494ccb928adb88f4091139468866d3e035270c0
 Description:  This package is essentially the python3-base package plus
  a few of the rarely used (and big) libraries stripped out
  into separate packages.
@@ -1230,10 +1230,10 @@ License: Python/2.0
 Section: lang
 CPE-ID: cpe:/a:python:python
 Architecture: mipsel_24kc
-Installed-Size: 99487
+Installed-Size: 99486
 Filename: python3-multiprocessing_3.9.7-2_mipsel_24kc.ipk
-Size: 100531
-SHA256sum: b7c130e61b6601fc52287424826a3a8522329884c5bc7665a323fa46d1c43ebe
+Size: 100524
+SHA256sum: 900f90ec950778d9ae9911cf1f6bd6a9b0f158b049ea6fa8e6c4006061d0e8a6
 Description:  Python 3.9 multiprocessing
 
 Package: python3-ncurses
@@ -1281,10 +1281,10 @@ License: MIT
 Section: lang
 CPE-ID: cpe:/a:python:python
 Architecture: mipsel_24kc
-Installed-Size: 146503
+Installed-Size: 146501
 Filename: python3-pkg-resources_57.4.0-1_mipsel_24kc.ipk
-Size: 147488
-SHA256sum: 7d57f88116f9a8d9683dd11a4c67048d8bae7951a07dcc79bf540e010a2efb7a
+Size: 147483
+SHA256sum: eecaa2a307ce509fb36214f102ca188caf68614fdbda824f6024656d0ad1f671
 Description:  Python 3.9 pkg_resources module (part of setuptools)
 
 Package: python3-pydoc
@@ -1294,10 +1294,10 @@ License: Python/2.0
 Section: lang
 CPE-ID: cpe:/a:python:python
 Architecture: mipsel_24kc
-Installed-Size: 191772
+Installed-Size: 191766
 Filename: python3-pydoc_3.9.7-2_mipsel_24kc.ipk
-Size: 192770
-SHA256sum: aeef5975e18880de94d16bd5da2795512a0063c0d03ab949d6126544f3a7d070
+Size: 192780
+SHA256sum: 95876736fc6dac89a010ed81de0f2100103c54cf14850be5ce37136210300086
 Description:  Python 3.9 pydoc module
 
 Package: python3-pyserial
@@ -1348,10 +1348,10 @@ License: MIT
 Section: lang
 CPE-ID: cpe:/a:python:python
 Architecture: mipsel_24kc
-Installed-Size: 506670
+Installed-Size: 506675
 Filename: python3-setuptools_57.4.0-1_mipsel_24kc.ipk
-Size: 507652
-SHA256sum: f2886a27bbca682d27ff55972f7bf3ff06ca1ed36a8f7ae960e76c4209490d55
+Size: 507660
+SHA256sum: 2c3f4dada7189bed0c1c3e5fed46e12c166b8a2b3e15092ecb824ee721aaeada
 Description:  Python 3.9 setuptools module
 
 Package: python3-sqlite3
@@ -1374,10 +1374,10 @@ License: Python/2.0
 Section: lang
 CPE-ID: cpe:/a:python:python
 Architecture: mipsel_24kc
-Installed-Size: 76378
+Installed-Size: 76385
 Filename: python3-unittest_3.9.7-2_mipsel_24kc.ipk
-Size: 77378
-SHA256sum: 728e0fcf3145672577162bc1f52a59211ab5da39eeceb6659f93f29ef16aa608
+Size: 77389
+SHA256sum: 5d5be48ffa5a280ebebe77668358b0d6d099d2acec3e8847038f9d07ff31320e
 Description:  Python 3.9 unittest module
 
 Package: python3-urllib3
