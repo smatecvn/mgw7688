@@ -85,6 +85,21 @@ Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
  .
  This package contains an mDNS/DNS-SD daemon.
 
+Package: bash
+Version: 5.1.8-1
+Depends: libc, libncurses6, libreadline8
+License: GPL-3.0-or-later
+Section: utils
+CPE-ID: cpe:/a:gnu:bash
+Architecture: mipsel_24kc
+Installed-Size: 349504
+Filename: bash_5.1.8-1_mipsel_24kc.ipk
+Size: 350498
+SHA256sum: ac2d9c76a2d3fe2cf7105e3239dd612d5e19712772a852cfbda65ae240ab87cb
+Description:  Bash is an sh-compatible command language interpreter that executes
+ commands read from the standard input or from a file. Bash also
+ incorporates useful features from the Korn and C shells (ksh and csh).
+
 Package: boost
 Version: 1.77.0-1
 Depends: libc, libstdcpp6, libpthread, librt
