@@ -31,10 +31,10 @@ License: Python Software Foundation License (PSF)
 Section: lang
 CPE-ID: cpe:/a:smt:mgw
 Architecture: mipsel_24kc
-Installed-Size: 202571
+Installed-Size: 202572
 Filename: python3-mgw_2.2.12-1_mipsel_24kc.ipk
-Size: 203401
-SHA256sum: 2b4af53d7ad695e879d88517ced4d59ee7da00e00f186062ae5b206975cd4a27
+Size: 203406
+SHA256sum: ba4bbdfe0feb3f369154ee4da2be17da01b9e61a8e9841f4bc0b807c6808c640
 Description:  Smatec M-Gateway
  .
  (Variant for Python3)
