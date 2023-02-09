@@ -34,7 +34,7 @@ Architecture: mipsel_24kc
 Installed-Size: 202489
 Filename: python3-mgw_2.2.12-1_mipsel_24kc.ipk
 Size: 203323
-SHA256sum: e8caa719344377e7d0829f67a408366b82af87a5d9e4baec8a01db71926860b0
+SHA256sum: 2dde6aa10e8fcacbe793464bc937b7d146e7c51c27d7450a56f74f80c533c144
 Description:  Smatec M-Gateway
  .
  (Variant for Python3)
