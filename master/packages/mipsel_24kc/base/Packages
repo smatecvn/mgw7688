@@ -1,30 +1,16 @@
-Package: blkid
-Version: 2.37-211117.45152
-Depends: libc, libblkid1, libuuid1
-License: GPL-2.0-only
-Section: utils
-CPE-ID: cpe:/a:kernel:util-linux
-Architecture: mipsel_24kc
-Installed-Size: 37834
-Filename: blkid_2.37-211117.45152_mipsel_24kc.ipk
-Size: 38730
-SHA256sum: d6036fc9c8e96f58da492ec89528cced4e39fd69d5132dbb9d8ce4c2158f98bc
-Description:  The blkid program is the command-line interface to working with the libblkid
- library.
-
 Package: busybox
 Version: 1.34.0-211117.45152
-Depends: libc, jsonfilter
+Depends: libc
 Conflicts: busybox-selinux
 License: GPL-2.0
 Section: base
 CPE-ID: cpe:/a:busybox:busybox
 Essential: yes
 Architecture: mipsel_24kc
-Installed-Size: 210394
+Installed-Size: 210320
 Filename: busybox_1.34.0-211117.45152_mipsel_24kc.ipk
-Size: 211041
-SHA256sum: 591ae88adbf075ff1a43d71eb42212366c332bbcc49e298b3a0109070b179df7
+Size: 210909
+SHA256sum: e1bd8117f1a825620fa31cef506f22a055cd6f4f8b69288025b58c7649c9704a
 Description:  The Swiss Army Knife of embedded Linux.
  It slices, it dices, it makes Julian Fries.
 
@@ -39,19 +25,6 @@ Filename: ca-bundle_20210119-1_all.ipk
 Size: 116748
 SHA256sum: 89591226ca7a852613a5dd0826ed43bdec7bdfc524295d7df2f8d74a35a353e1
 Description:  System CA certificates as a bundle
-
-Package: cfdisk
-Version: 2.37-211117.45152
-Depends: libc, libblkid1, libncurses6, libsmartcols1, libfdisk1, libmount1
-License: GPL-2.0-only
-Section: utils
-CPE-ID: cpe:/a:kernel:util-linux
-Architecture: mipsel_24kc
-Installed-Size: 33542
-Filename: cfdisk_2.37-211117.45152_mipsel_24kc.ipk
-Size: 34201
-SHA256sum: 0facd9e09da7067302b75cd312d46011e903dfeeb40d3f8927e4060fa1d8420b
-Description:  cfdisk is a curses-based program for partitioning any hard disk drive
 
 Package: chat
 Version: 2.4.9.git-2021-01-04-3
@@ -106,20 +79,6 @@ Filename: fdisk_2.37-211117.45152_mipsel_24kc.ipk
 Size: 49510
 SHA256sum: ebbc42bf57c3c202d50898931257a14b861b04885fb0b296f28d8012a11ceff5
 Description:  a menu-driven program for creation and manipulation of partition tables
-
-Package: findfs
-Version: 2.37-211117.45152
-Depends: libc, libblkid1
-License: GPL-2.0-only
-Section: utils
-CPE-ID: cpe:/a:kernel:util-linux
-Architecture: mipsel_24kc
-Installed-Size: 2473
-Filename: findfs_2.37-211117.45152_mipsel_24kc.ipk
-Size: 3317
-SHA256sum: 683bea81069599414d31c2544f707b9d50b8b67bac803caff3526b0bad79e259
-Description:  findfs will search the disks in the system looking for a filesystem which has
- a label matching label or a UUID equal to uuid
 
 Package: firewall
 Version: 2021-08-14-40e5f6a2-1
