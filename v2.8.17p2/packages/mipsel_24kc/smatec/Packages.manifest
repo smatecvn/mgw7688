@@ -6,10 +6,10 @@ SourceName: mgw7688-os
 Section: utils
 SourceDateEpoch: 1622679011
 Architecture: mipsel_24kc
-Installed-Size: 16732
+Installed-Size: 17825
 Filename: mgw7688-os_1_mipsel_24kc.ipk
-Size: 17696
-SHA256sum: 56b5a32bed228eb53019aae052c6ec62b73bc041dd1a03f7dc8e34122ec0d34f
+Size: 18745
+SHA256sum: f19dc3db52529690cee1303dde5d24a4aed928d90c840801bcbce8971983200f
 Description:  MGW7688 Board Support Package
 
 Package: python3-alsaaudio

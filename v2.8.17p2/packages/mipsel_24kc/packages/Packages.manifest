@@ -1965,10 +1965,10 @@ Section: net
 SourceDateEpoch: 1632375478
 Maintainer: Tony Ambardar <itugrok@yahoo.com>
 Architecture: all
-Installed-Size: 4925
+Installed-Size: 4971
 Filename: speedtest-netperf_1.0.0-1_all.ipk
-Size: 5776
-SHA256sum: e516719440b91a7bb7357840ea49a62ec7a5205e38aac0d62b131be7722e932b
+Size: 5825
+SHA256sum: 7f58d026fda88aa101490bacdd126ec897fe7b758415334615c7760501757510
 Description:  Script to measure the performance of your network and router.
  
  Please see https://github.com/openwrt/packages/blob/master/net/speedtest-netperf/files/README.md for further information.
