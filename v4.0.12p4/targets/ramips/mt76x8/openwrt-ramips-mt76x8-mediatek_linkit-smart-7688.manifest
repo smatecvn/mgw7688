@@ -261,7 +261,7 @@ python3-light - 3.9.7-2
 python3-logging - 3.9.7-2
 python3-lzma - 3.9.7-2
 python3-markupsafe - 2.0.1-1
-python3-mgw - 2.2.12-1
+python3-mgw - 3.0.4p2-1
 python3-multiprocessing - 3.9.7-2
 python3-ncurses - 3.9.7-2
 python3-openssl - 3.9.7-2
