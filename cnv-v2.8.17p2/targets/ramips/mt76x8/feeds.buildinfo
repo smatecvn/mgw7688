@@ -1,0 +1,5 @@
+src-link packages /home/user/archive-master-mira/packages
+src-link luci /home/user/archive-master-mira/luci
+src-link routing /home/user/archive-master-mira/routing
+src-link telephony /home/user/archive-master-mira/telephony
+src-link smatec /home/user/archive-master-mira/smatec
