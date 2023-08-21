@@ -2026,6 +2026,23 @@ Size: 52235
 SHA256sum: 902c705bd123c17fc905638f9b150496853da8b4e5425777f083732c5061f51c
 Description:  USB devices listing utilities
 
+Package: xxd
+Version: 8.2-5
+Depends: libc
+Source: /home/user/archive-master-mira/packages/utils/vim
+SourceName: xxd
+Section: utils
+SourceDateEpoch: 1633480408
+CPE-ID: cpe:/a:vim:vim
+Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
+Architecture: mipsel_24kc
+Installed-Size: 5307
+Filename: xxd_8.2-5_mipsel_24kc.ipk
+Size: 6109
+SHA256sum: 32f74db0cb11d3eeb7183d4fc87147d6053744cd5ba7bb890349aee79ac8395b
+Description:  xxd creates a hex dump of a given file or standard input, it can also convert
+ a hex dump back to its original binary form.
+
 Package: yajl
 Version: 2.1.0-2
 Depends: libc
