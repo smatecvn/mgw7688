@@ -3,10 +3,10 @@ Version: 1
 Depends: libc, curl, strace, coreutils, coreutils-stty, coreutils-timeout, avahi-dbus-daemon, kmod-fs-vfat, dosfstools, rpcd, rpcd-mod-iwinfo, rpcd-mod-rpcsys, kmod-mt76, picocom, kmod-i2c-core, kmod-i2c-mt7628, cgi-io, uboot-envtools, kmod-sdhci-mt7620, kmod-usb-storage, usbutils, block-mount, kmod-video-core, kmod-video-uvc, kmod-sound-core, kmod-sound-mt7620, madplay, alsa-utils, comgt, usb-modeswitch, kmod-mii, kmod-usb-wdm, kmod-usb-net-qmi-wwan, kmod-usb-net-rndis, uqmi, kmod-usb-serial, kmod-usb-serial-option, kmod-usb-serial-wwan, python3, libmraa-python3, python3-pyaudio, python3-alsaaudio, python3-paho-mqtt, ffmpeg, mpd, mpc, python3-flask, python3-requests, python3-flask-httpauth, python3-mgw, htop, tcpdump-mini, netcat, python3-pyserial
 Section: utils
 Architecture: mipsel_24kc
-Installed-Size: 16264
+Installed-Size: 16368
 Filename: mgw7688-os_1_mipsel_24kc.ipk
-Size: 17289
-SHA256sum: 8f400c482230ffa0ce26553501acffd52ccf30cc1370033c5a94df11e6e2b63a
+Size: 17384
+SHA256sum: d57edfed140ce9c182ec2868948cd5a25f8841b400007db6f191350ac2460544
 Description:  MGW7688 Board Support Package
 
 Package: python3-alsaaudio
@@ -31,10 +31,10 @@ License: Python Software Foundation License (PSF)
 Section: lang
 CPE-ID: cpe:/a:smt:mgw
 Architecture: mipsel_24kc
-Installed-Size: 140667
+Installed-Size: 141741
 Filename: python3-mgw_3.0.4p8-1_mipsel_24kc.ipk
-Size: 141663
-SHA256sum: a6442d884e401e0308f94ff2ac84a0991c17bda02c018c1c00e84adf54088bf3
+Size: 142736
+SHA256sum: db48652b3a8d907f40297fd536841ec5ee757fa90b3c535933582f62afef1e5c
 Description:  Smatec M-Gateway
  .
  (Variant for Python3)
