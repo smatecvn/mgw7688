@@ -1,0 +1,16 @@
+Package: madplay
+Version: 0.15.2b-10
+Depends: libc, libid3tag, libmad, alsa-lib
+Source: feeds/packages/sound/madplay
+SourceName: madplay
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Section: sound
+SourceDateEpoch: 1616430190
+Maintainer: Simon Peter <probono@puredarwin.org>
+Architecture: mipsel_24kc
+Installed-Size: 28280
+Description:  MAD is an MPEG audio decoder. It currently only supports the MPEG 1
+ standard, but fully implements all three audio layers (Layer I, Layer II,
+ and Layer III, the latter often colloquially known as MP3.). There is also
+ full support for ID3 tags.

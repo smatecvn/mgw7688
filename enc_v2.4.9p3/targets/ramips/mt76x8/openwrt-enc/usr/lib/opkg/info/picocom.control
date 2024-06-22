@@ -1,0 +1,11 @@
+Package: picocom
+Version: 3.1-5
+Depends: libc
+Source: feeds/packages/utils/picocom
+SourceName: picocom
+License: LICENSE.txt
+Section: utils
+SourceDateEpoch: 1614187565
+Architecture: mipsel_24kc
+Installed-Size: 17613
+Description:  minimal dumb-terminal emulation program

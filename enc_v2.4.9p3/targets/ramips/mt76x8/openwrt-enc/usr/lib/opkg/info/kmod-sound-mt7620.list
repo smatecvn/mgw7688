@@ -1,0 +1,5 @@
+/lib/modules/5.4.238/snd-soc-ralink-i2s.ko
+/lib/modules/5.4.238/snd-soc-simple-card.ko
+/lib/modules/5.4.238/snd-soc-simple-card-utils.ko
+/lib/modules/5.4.238/snd-soc-wm8960.ko
+/etc/modules.d/90-sound-mt7620

@@ -1,0 +1,17 @@
+#!/bin/sh /etc/rc.common
+. /lib/functions.sh
+
+START=11
+STOP=
+
+start()
+{
+  # Set GPIO44: GPIO off - LED Green
+  PIN_OFFSET=416
+  GPIO44=44
+  LED_SER=$(expr $PIN_OFFSET + $GPIO44)
+  cd /sys/class/gpio
+  echo $LED_SER> export
+  echo out > gpio$LED_SER/direction
+  echo 0 > gpio$LED_SER/value
+}

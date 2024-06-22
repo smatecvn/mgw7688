@@ -1,0 +1,79 @@
+#!/bin/sh
+
+PRINT_CMD=0
+
+# Validate
+if [ -z "$1" ]; then 
+  echo "Usage:"
+  echo "    ${0} -h                 Display help"
+  echo "    ${0} -p                 Print QR code"
+  echo "    ${0} -u <user>          Tester information"
+  exit 0
+fi
+
+while getopts ":hpu:" opt; do
+  case "${opt}" in
+    # Help    
+    h )
+      echo "Usage:"
+      echo "    ${0} -h                 Display help"
+	    echo "    ${0} -p                 Print QR code"
+      echo "    ${0} -u <user>          Tester information"
+      exit 0
+      ;;
+	u )
+	  # Firmware Version 	
+	  TESTER="$OPTARG" 
+	  ;;
+	  
+	p )
+	  # Firmware Version 	
+	  PRINT_CMD=1
+	  ;;
+	  
+    # Invalid option
+   \? )
+     echo "Invalid Option: -$OPTARG" 1>&2
+     exit 1
+     ;;
+  esac
+done
+
+echo "Download index.json file..."
+wget -q -O index.json http://admin:mgw@127.0.0.1:81/index.json
+INDEX_JSON_STR=$(cat index.json | python3 -c "import json,sys;obj=json.load(sys.stdin);print(obj['mgwId'], end=' '); \
+      print(obj['vCode'], end=' '); print(obj['version'], end=' '); print(obj['simMode'])")
+MGWID=$(echo "${INDEX_JSON_STR}" | awk '{print $1}')
+VCODE=$(echo "${INDEX_JSON_STR}" | awk '{print $2}')
+FW_VERSION=$(echo "${INDEX_JSON_STR}" | awk '{print $3}')
+SIM=$(echo "${INDEX_JSON_STR}" | awk '{print $4}')
+
+# Download gms .json file    
+echo "Download gms.json file..."
+wget -q -O gsm.json http://admin:mgw@127.0.0.1:81/gsm.json
+GSM_JSON_STR=$(cat gsm.json | python3 -c "import json,sys;obj=json.load(sys.stdin);print(obj['imei'], end=' '); \
+      print(obj['model'], end=' '); print(obj['revision'], end=' '); print(obj['imsi'])")
+IMEI=$(echo "${GSM_JSON_STR}" | awk '{print $1}')
+MODEL=$(echo "${GSM_JSON_STR}" | awk '{print $2}')
+REVISION=$(echo "${GSM_JSON_STR}" | awk '{print $3}')
+IMSI=$(echo "${GSM_JSON_STR}" | awk '{print $4}')
+OS_NAME=$(echo "$(cat /etc/config/system | grep 'os_version')" | awk '{print $3}' | sed "s/'//")
+OS_VERSION=$(echo "$(cat /etc/config/system | grep 'os_version')" | awk '{print $4}' | sed "s/'//")
+HOST_NAME=$(cat /proc/sys/kernel/hostname)
+RANDOM=$(date +%s)
+DATE=$(date "+%D %T")
+FILE="${TESTER}_${RANDOM}_${MGWID}.csv"
+
+echo "Create data file: ${FILE}"
+touch $FILE
+if [ $SIM == 1 ]; then 
+   echo "${DATE},${HOSTNAME},'${MGWID},'${VCODE},'${IMSI},eSIM,'${IMEI},${MODEL},${REVISION},'1.2,'${FW_VERSION}, ${OS_NAME} ${OS_VERSION},-,-,${PRINT_CMD}"> $FILE
+else
+   echo "${DATE},${HOSTNAME},'${MGWID},'${VCODE},'${IMSI},nanoSIM,'${IMEI},${MODEL},${REVISION},'1.2,'$FW_VERSION,${OS_NAME} ${OS_VERSION},-,-,${PRINT_CMD}" > $FILE
+fi
+
+echo "Push file ${FILE} to server"
+curl -T $FILE ftp://mira:123456@smatec.com.vn/$FILE   
+echo "Delete ${FILE}"   
+rm $FILE
+rm *.json

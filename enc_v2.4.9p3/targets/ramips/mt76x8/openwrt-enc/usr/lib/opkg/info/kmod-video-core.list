@@ -1,0 +1,2 @@
+/etc/modules.d/60-video-core
+/lib/modules/5.4.238/videodev.ko

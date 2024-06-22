@@ -1,0 +1,3 @@
+#!/bin/sh
+
+speedtest-netperf.sh -t 10 -n 1 | tee -a /mnt/mmcblk0p1/speedtest.log

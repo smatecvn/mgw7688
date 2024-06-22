@@ -1,0 +1,11 @@
+Package: kmod-nf-reject6
+Version: 5.4.238-1
+Depends: kernel (=5.4.238-1-ad9da655c1e5c95f8c5e3aaa948a03ee)
+Source: package/kernel/linux
+SourceName: kmod-nf-reject6
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1679935348
+Architecture: mipsel_24kc
+Installed-Size: 2403
+Description:  Netfilter IPv6 reject support

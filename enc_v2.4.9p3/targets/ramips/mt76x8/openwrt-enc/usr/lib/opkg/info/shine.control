@@ -1,0 +1,16 @@
+Package: shine
+Version: 3.1.1-1
+Depends: libc
+Source: feeds/packages/sound/shine
+SourceName: shine
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: sound
+SourceDateEpoch: 1531709971
+Maintainer: Nicolas Thill <nico@openwrt.org>
+Architecture: mipsel_24kc
+Installed-Size: 29481
+Description:  savonet/shine is a blazing fast mp3 encoding library implemented in fixed-point
+ arithmetic. The library can thus be used to perform super fast mp3 encoding on
+ architectures without a FPU, such as armel, etc.. It is also, however, also
+ super fast on architectures with a FPU!

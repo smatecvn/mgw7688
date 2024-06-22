@@ -1,0 +1,13 @@
+Package: kmod-sound-mt762x-wm8960
+Version: 5.4.238-1
+Depends: kernel (=5.4.238-1-ad9da655c1e5c95f8c5e3aaa948a03ee), kmod-sound-mt7620, kmod-i2c-mt7628
+Source: package/kernel/mt762x-wm8960
+SourceName: kmod-sound-mt762x-wm8960
+License: GPL-2.0
+LicenseFiles: LICENSE
+Section: kernel
+SourceDateEpoch: 1630219036
+Maintainer: Jack Chen <redchenjs@live.com>
+Architecture: mipsel_24kc
+Installed-Size: 2229
+Description:  MT762X WM8960 ALSA SoC Machine Driver

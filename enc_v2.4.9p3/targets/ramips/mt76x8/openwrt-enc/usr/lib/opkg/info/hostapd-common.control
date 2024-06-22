@@ -1,0 +1,13 @@
+Package: hostapd-common
+Version: 2020-06-08-5a8b3662-41
+Depends: libc
+Source: package/network/services/hostapd
+SourceName: hostapd-common
+License: BSD-3-Clause
+Section: net
+SourceDateEpoch: 1664996990
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mipsel_24kc
+Installed-Size: 11463
+Description:  hostapd/wpa_supplicant common support files

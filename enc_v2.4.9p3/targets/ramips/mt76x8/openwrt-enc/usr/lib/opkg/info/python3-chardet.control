@@ -1,0 +1,12 @@
+Package: python3-chardet
+Version: 4.0.0-1
+Depends: libc, python3-light
+Source: feeds/packages/lang/python/python-chardet
+SourceName: python3-chardet
+License: LGPL-2.1
+Section: lang
+SourceDateEpoch: 1608101068
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 113118
+Description:  Universal encoding detector for Python 2 and 3

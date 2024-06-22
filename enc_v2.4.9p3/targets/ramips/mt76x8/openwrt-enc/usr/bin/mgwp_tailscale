@@ -1,0 +1,72 @@
+#!/bin/ash
+
+send_login_link() {
+      #wget -q -O index.json http://admin:mgw@127.0.0.1:81/index.json
+      #INDEX_JSON_STR=$(cat index.json | python3 -c "import json,sys;obj=json.load(sys.stdin);print(obj['mgwId'], end=' '); \
+      #      print(obj['vCode'], end=' '); print(obj['version'], end=' '); print(obj['sim'])")
+      #MGWID=$(echo "${INDEX_JSON_STR}" | awk '{print $1}')
+      #VCODE=$(echo "${INDEX_JSON_STR}" | awk '{print $2}')
+      #FW_VERSION=$(echo "${INDEX_JSON_STR}" | awk '{print $3}')
+      #SIM=$(echo "${INDEX_JSON_STR}" | awk '{print $4}')
+
+      TEXT=$(cat tailscale.log | grep "https")
+
+      if [[ -n "$TEXT" ]]; 
+      then
+            #curl -s -X POST https://api.telegram.org/bot5412623846:AAGyil8lWi3AkFRKOAWiw2nwXB4ol5mOTr8/sendMessage -F chat_id='380016636' -F text="Id: $MGWID / $TEXT"
+            curl -s -X POST https://api.telegram.org/bot5106093575:AAFRlt3t6KyGMAXV2I0Cd8Pca5zPK1DOACY/sendMessage -F chat_id='-1001572366527' -F text="Id: $MGWID / $TEXT"
+            #curl -s -X POST https://api.telegram.org/bot5412623846:AAGyil8lWi3AkFRKOAWiw2nwXB4ol5mOTr8/sendMessage -F chat_id='380016636' -F text="$TEXT"
+      fi
+}
+# while true
+# do
+# Validate
+if [ -z "$1" ]; then 
+  echo "Usage:"
+  echo "    ${0} -h                 Display help"
+  echo "    ${0} -u <miraid>        Tailscale start service then up"
+  echo "    ${0} -d                 Tailscale logout then stop service"
+  exit 0
+fi
+
+while getopts ":hdu:" opt; do
+  case ${opt} in
+    # Help    
+      h )
+            echo "Usage:"
+            echo "    ${0} -h                 Display help"
+            echo "    ${0} -u <miraid>        Tailscale start service then up"
+            echo "    ${0} -d                 Tailscale logout then stop service"
+            exit 0
+      ;;
+      u )
+            # Start service and up
+            MGWID="$OPTARG" 
+            echo "Tailscale service start"
+            /etc/init.d/tailscale start 
+            sleep 5
+            cd /tmp
+            touch tailscale.log
+            echo "Tailscale up"
+            tailscale up --accept-dns=false 2>&1 | tee tailscale.log &
+            sleep 10
+            send_login_link
+            exit 0
+            #TESTER="$OPTARG" 
+      ;;
+      d )
+            # Taicale logout and stop service 	
+            echo "Tailscale logout"    
+            tailscale logout
+            sleep 5
+            echo "Tailscale stop" 
+            /etc/init.d/tailscale stop
+            exit 0
+      ;;  
+      # Invalid option
+      \? )
+            echo "Invalid Option: -$OPTARG" 1>&2
+            exit 1
+      ;;
+  esac
+done

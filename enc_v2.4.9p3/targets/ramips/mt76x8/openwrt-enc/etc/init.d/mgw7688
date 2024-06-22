@@ -1,0 +1,126 @@
+#!/bin/sh /etc/rc.common
+. /lib/functions.sh
+
+START=99
+STOP=
+
+start()
+{
+  # Reset 4G router at boot
+  # timeout 1 uqmi -d /dev/cdc-wdm0 --set-device-operating-mode offline
+  # timeout 1 uqmi -d /dev/cdc-wdm0 --set-device-operating-mode reset
+  
+  # Unmute external ClassD
+  mraa-gpio set 34 1
+
+  # Unmute audio
+  echo "Enable alsa mixer channels ..."
+  amixer set 'Left Output Mixer PCM' on
+  amixer set 'Right Output Mixer PCM' on
+  amixer set 'Headphone' -M 0%
+  amixer set 'Speaker' -M 0%
+
+  #ALC funtions
+  amixer sset "ALC Attack" 0
+  amixer sset "ALC Decay" 0
+  amixer sset "ALC Function" 0
+  amixer sset "ALC Hold Time" 0
+  amixer sset "ALC Max Gain" 0
+  amixer sset "ALC Min Gain" 0
+  amixer sset "ALC Mode" 0
+  amixer sset "ALC Target" 0
+  amixer sset "Left Input Mixer Boost" off
+  amixer sset "Right Input Mixer Boost" off
+  amixer sset "ALC Function" "Stereo"
+
+  #Capture
+  amixer sset 'Capture' -M 0%
+  amixer sset 'ADC PCM' -M 50%
+  amixer sset 'Left Input Boost Mixer LINPUT1' -M 0% #mute mic
+  amixer sset 'Left Input Boost Mixer LINPUT2' -M 50%
+  amixer sset 'Left Input Boost Mixer LINPUT3' -M 0%
+  amixer sset 'Right Input Boost Mixer RINPUT1' -M 0% #mute mic
+  amixer sset 'Right Input Boost Mixer RINPUT2' -M 50%
+  amixer sset 'Right Input Boost Mixer RINPUT3' -M 0%
+  amixer sset "Left Input Mixer Boost" off
+  amixer sset "Right Input Mixer Boost" off
+
+  
+  # Enable audio sound
+  echo "Enable Audio mute ... "
+  mraa-gpio set 17 0
+
+  # Default R=1, G=0
+  mraa-gpio set 33 1
+  mraa-gpio set 15 0
+  
+    # Check if S0sysfixtime exists and points to ../init.d/sysfixtime
+  if [ -L "/etc/rc.d/S0sysfixtime" ] && [ "$(readlink -f /etc/rc.d/S0sysfixtime)" == "/etc/init.d/sysfixtime" ]; then
+	echo "S0sysfixtime is correctly linked to ../init.d/sysfixtime"
+	# Disable sysfixtime
+	#/etc/init.d/sysfixtime disable
+	echo "remove old link"
+	rm /etc/rc.d/S0sysfixtime
+	# Enable sysfixtime
+	/etc/init.d/sysfixtime enable
+	echo "sysfixtime enabled"
+	/etc/init.d/sysfixtime boot
+	
+  else
+    echo "S0sysfixtime is not linked to ../init.d/sysfixtime or does not exist"
+  fi
+
+  # if can't detect microSD, then use /tmp
+  if [ ! -b /dev/mmcblk0p1 ]; then
+    logger "/dev/mmcblk0p1 block is not detected, then mount /tmp/mmcblk0p1 as /mnt/mmcblk0p1/ "
+	rm -rf /mnt/mmcblk0p1/
+	mkdir -p /tmp/mmcblk0p1
+    ln -ns /tmp/mmcblk0p1/ /mnt
+  fi
+
+  # Sync Sysdate with HW RTC
+  /sbin/hwclock -s -u
+
+  # Stop tailscale service
+  #/etc/init.d/tailscale stop
+  
+  #Run MGWP_APP if the process crash
+MGWP_APP_PID=$(pgrep -f /usr/bin/mgwp_app)
+
+if [[ -z "$MGWP_APP_PID" ]]; then
+   logger "mgwp7688: starting mgw_app"
+    /usr/bin/mgwp_app &
+else
+   logger "mgwp7688: mgwp_app started!"
+fi
+  # Run python mgw
+  # logger "Running python-mgw app ... "
+  # /usr/bin/mgwp_app &
+  
+  # logger "Running mgwp_check_disconnect ... "
+  # /usr/bin/mgwp_check_disconnect &
+  
+  # mgwp_streaming_task 
+  # Remove these comment to build for ENC
+  #logger "Running mgwp_streaming_task ... "
+  #/usr/bin/mgwp_streaming_task &
+  
+  logger "Running mgwp_streaming_task ... "
+  /usr/bin/mgwp_streaming_task_v2 &
+  
+  # mgwp_stat to calulate %cpu
+  # logger "Running mgwp_stat ... "
+  # /usr/bin/mgwp_stat &
+  # mgwp_stat to calulate %cpu
+  
+  # Disable shutdown MIRA for COMPACT
+  # mraa-gpio set 26 0
+  #logger "Running ClassD... "
+  #/usr/bin/mgwp_classd &
+
+  # Run MPD
+  # Enable this script for MGW, SmartPA app
+  #logger "Running MPD... "
+  #/usr/bin/mpd --no-daemon /etc/mpd.conf &
+
+}

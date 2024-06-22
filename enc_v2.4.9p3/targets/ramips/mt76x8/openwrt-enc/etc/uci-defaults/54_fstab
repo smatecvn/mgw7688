@@ -1,0 +1,16 @@
+#!/bin/sh
+
+#Auto mount - eMMC at boot
+#check if /dev/mmcblk0p1 file is a block device
+logger "Auto mount eMMC when boot!"
+if [ ! -b /dev/mmcblk0p1 ]; then
+    printf 'o\nn\np\n1\n\n\nw' | fdisk /dev/mmcblk0
+    mkfs.ext4 /dev/mmcblk0p1
+    block detect | uci import fstab
+fi
+
+uci set fstab.@mount[-1].enabled='1'
+uci set fstab.@mount[-1].enabled_fsck='1'
+uci commit fstab
+
+exit 0

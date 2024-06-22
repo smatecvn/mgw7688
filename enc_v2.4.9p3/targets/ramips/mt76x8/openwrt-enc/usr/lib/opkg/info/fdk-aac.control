@@ -1,0 +1,13 @@
+Package: fdk-aac
+Version: 2.0.1-4
+Depends: libc
+Source: feeds/packages/sound/fdk-aac
+SourceName: fdk-aac
+License: Fraunhofer-FDK-AAC-for-Android
+LicenseFiles: NOTICE
+Section: sound
+SourceDateEpoch: 1606642301
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: mipsel_24kc
+Installed-Size: 318689
+Description:  Port of the Fraunhofer FDK AAC Codec Library for Android

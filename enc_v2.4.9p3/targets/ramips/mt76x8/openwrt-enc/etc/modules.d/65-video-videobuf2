@@ -1,0 +1,4 @@
+videobuf-v4l2
+videobuf2-core
+videobuf2-memops
+videobuf2-vmalloc

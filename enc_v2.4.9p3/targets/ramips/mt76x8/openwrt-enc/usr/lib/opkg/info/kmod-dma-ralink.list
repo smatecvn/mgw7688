@@ -1,0 +1,3 @@
+/lib/modules/5.4.238/ralink-gdma.ko
+/etc/modules.d/52-dma-ralink
+/lib/modules/5.4.238/virt-dma.ko

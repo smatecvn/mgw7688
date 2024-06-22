@@ -1,0 +1,16 @@
+Package: python3-alsaaudio
+Version: 0.8.4-1
+Depends: libc, python3, alsa-lib
+Source: /workdir/smatec/python-alsaaudio
+SourceName: python3-alsaaudio
+License: Python Software Foundation License (PSF)
+LicenseFiles: LICENSE.rst
+Section: lang
+SourceDateEpoch: 1622679011
+CPE-ID: cpe:/a:larsimmisch:pyalsaaudio
+Maintainer: HaiBac Ngo <ngohaibac@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 15951
+Description:  ALSA wrappers for Python
+ .
+ (Variant for Python3)

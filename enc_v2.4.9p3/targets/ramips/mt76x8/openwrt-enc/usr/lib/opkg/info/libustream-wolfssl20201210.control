@@ -1,0 +1,15 @@
+Package: libustream-wolfssl20201210
+Version: 2022-01-16-868fd881-2
+Depends: libc, libubox20210516, libwolfssl5.5.3.99a5b54a
+Conflicts: libustream-openssl
+Provides: libustream-wolfssl
+Source: package/libs/ustream-ssl
+SourceName: libustream-wolfssl
+License: ISC
+Section: libs
+SourceDateEpoch: 1664996990
+ABIVersion: 20201210
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mipsel_24kc
+Installed-Size: 3989
+Description:  ustream SSL Library (wolfssl)

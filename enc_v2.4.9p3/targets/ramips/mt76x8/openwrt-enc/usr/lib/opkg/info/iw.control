@@ -1,0 +1,12 @@
+Package: iw
+Version: 5.9-8fab0c9e-3
+Depends: libc, libnl-tiny1
+Source: package/network/utils/iw
+SourceName: iw
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1637688604
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mipsel_24kc
+Installed-Size: 40312
+Description:  cfg80211 interface configuration utility

@@ -1,0 +1,56 @@
+#!/bin/sh
+
+# Check if the delay time (in seconds) is provided as a command-line parameter
+if [ $# -eq 0 ]; then
+  echo "Usage: $0 <delay_seconds>"
+  exit 1
+fi
+
+app_name="/usr/bin/mgwp_app"
+
+# Get the delay time from command-line parameters
+delay_seconds="$1"
+
+#sleep 5
+
+# Disable crontab line 2
+crontab -l | sed '2s/^/#/' | crontab -
+
+# Close the application
+# Kill MGWP_APP if the process is running
+MGWP_APP_PID=$(pgrep -f $app_name)
+MGWP_APP_PID_CNT=$(echo $MGWP_APP_PID | awk '{ print NF}')
+
+if [[ "$MGWP_APP_PID_CNT" -gt 0 ]]; then
+    for pid in $MGWP_APP_PID
+    do
+        kill -9 $pid
+    done
+fi
+# Kill python app
+killall python
+
+# Mute the class D
+mraa-gpio set 34 1
+
+# Control FM relay
+mraa-gpio set 16 1
+
+# Turn off all display led
+# mraa 15 ~ GPIO44: -> server connection state
+mraa-gpio set 15 0
+# mraa 33 ~ GPIO41 -> error state
+mraa-gpio set 33 0
+
+# Wait for the specified delay
+logger "MIRA enters sleep mode within $delay_seconds second"
+
+sleep "$delay_seconds"
+
+logger "MIRA recovers from sleep mode now"
+
+# Enable crontab line 2
+crontab -l | sed '2s/^#//' | crontab -
+
+# Restart the application
+"$app_name" &

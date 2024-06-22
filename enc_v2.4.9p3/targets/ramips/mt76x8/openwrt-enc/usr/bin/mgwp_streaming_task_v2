@@ -1,0 +1,106 @@
+#!/bin/sh
+
+mgwp_settings="/root/mgwp/mgwp_settings.json"
+output="/mnt/mmcblk0p1/streaming.log"
+
+# Default Streaming Infomation 
+STREAMING_SERVER="sohoa.truyenthanhthongminh.vn"
+STREAMING_PORT="80"
+MOUNT_POINT="live"
+export USER=source
+export PASS=hackme
+
+
+check_server_state(){
+	#echo "Download status.json file..."
+	wget -q -O status.json http://admin:mgw@127.0.0.1:81/status.json
+	STATUS_JSON_STR=$(cat status.json | python3 -c "import json,sys;obj=json.load(sys.stdin);print(obj['server'])")
+	CONNECT_STATE=$(echo "${STATUS_JSON_STR}" | awk '{print $1}')
+	local retval
+	
+	if [ $CONNECT_STATE == "Connected" ]; then
+		#echo "connected to server"
+		retval="true"
+	else
+		#echo "disconnected to server"
+		retval="false"
+	fi
+	echo $retval
+}
+
+get_streaming_setting(){
+	CONNECTTION_STR=$(echo $(cat /root/mgwp/mgwp_settings.json) | python3 -c "import json,sys;obj=json.load(sys.stdin); print(obj['connection'])") 
+	STREAMING_STR=$(echo $CONNECTTION_STR | sed "s/"\'"/"\""/g" | python3 -c "import json,sys;obj=json.load(sys.stdin); \
+		print(obj['streaming_server'], end =' '); print(obj['streaming_port'], end =' '); print(obj['mount_point'])")
+	#echo $STREAMING_STR
+	STREAMING_SERVER=$(echo "${STREAMING_STR}" | awk '{print $1}')
+	STREAMING_PORT=$(echo "${STREAMING_STR}" | awk '{print $2}')
+	MOUNT_POINT=$(echo "${STREAMING_STR}" | awk '{print $3}')
+}
+
+
+#echo "Streaming Server: ${STREAMING_SERVER}"
+#echo "Streaming Port: ${STREAMING_PORT}"
+#echo "Mount Point: ${MOUNT_POINT}"
+
+retval=$(check_server_state)
+
+#echo "Return value: ${retval}"
+
+#if [ "${retval}" == "true" ]; then
+#     echo "connected to server"
+#else
+#     echo "disconnected to server"
+#fi
+while true
+do
+sleep 10
+PID=$(pgrep ffmpeg)
+if [ -z $PID ]; then 
+	echo "ffmpeg is stop. Start ffmpeg"	
+	retval=$(check_server_state)
+	if [ "${retval}" == "true" ]; then
+     	logger "connected to mqtt server"
+		get_streaming_setting
+		ffmpeg -nostdin -re -ac 2 -f alsa -i hw:0,0 -ar 48000 -c:a libshine -qscale:a 6 -content_type audio/mpeg -vn -ac 2 \
+			-f mp3 "icecast://$USER:$PASS@${STREAMING_SERVER}:${STREAMING_PORT}/${MOUNT_POINT}"  -loglevel warning 2>&1 | tee -a $output &
+		#ffmpeg -nostdin -re -ac 2 -f alsa -i hw:0,0 -ar 48000 -c:a libfdk_aac -content_type 'audio/aac' -vn -ac 2 \
+		#	-f adts "icecast://source:hackme@${STREAMING_SERVER}:${STREAMING_PORT}/${MOUNT_POINT}"  -loglevel warning 2>&1 | tee -a $output &
+	else
+     	logger "disconnected to mqtt server"
+	fi
+
+else
+	# Check log file if have warning
+	cpu_usage=$(top -n 1 -b | grep '[f]fmpeg' | awk '{print $7}' | tr -d '%')
+	total_cpu=$(($total_cpu +$cpu_usage))
+	sample_count=$(($sample_count+1))
+	# Calculate and print the average every 3 samples
+    if [ $sample_count -eq 3 ]; then
+        # Calculate the average CPU usage
+        average_cpu=$(awk "BEGIN {print $total_cpu / $sample_count}")
+		#echo "average_cpu: $average_cpu , sample_count: $sample_count"
+		
+        # Write the result to the output file
+		#int_average_cpu=$(echo $average_cpu | awk '{printf "%.0f", $average_cpu}')
+		int_average_cpu=$(printf "%.0f\n" $average_cpu)       
+        
+		if [ "$int_average_cpu" -lt 20 ]; then
+			logger "streaming to media server is not ok. %cpu -> $int_average_cpu%"
+			kill -9 $PID 
+		else
+			logger "streaming to media server is ok. %cpu -> $int_average_cpu%"
+		fi		
+		# Reset total CPU and sample count        
+		total_cpu=0
+        sample_count=0
+	fi
+	XRUN_LOG_CNT=$(cat /mnt/mmcblk0p1/streaming.log | grep "ALSA buffer xrun" | wc -l)
+	if [[ "$XRUN_LOG_CNT" -ge 5 ]]; then 
+		logger "FFmpeg is running but can not Stream"
+		kill -9 $PID 
+		echo > /mnt/mmcblk0p1/streaming.log
+	fi
+fi
+done
+

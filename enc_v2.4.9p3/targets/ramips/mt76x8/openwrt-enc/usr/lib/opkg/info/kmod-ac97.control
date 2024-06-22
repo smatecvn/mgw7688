@@ -1,0 +1,11 @@
+Package: kmod-ac97
+Version: 5.4.238-1
+Depends: kernel (=5.4.238-1-ad9da655c1e5c95f8c5e3aaa948a03ee), kmod-sound-core
+Source: package/kernel/linux
+SourceName: kmod-ac97
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1679935348
+Architecture: mipsel_24kc
+Installed-Size: 105
+Description:  The ac97 controller

@@ -1,0 +1,12 @@
+Package: alsa-ucm-conf
+Version: 1.2.4-1
+Depends: libc
+Source: feeds/packages/libs/alsa-ucm-conf
+SourceName: alsa-ucm-conf
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1606285911
+Architecture: all
+Installed-Size: 26580
+Description:  This is a set of configuration files needed for some ALS utilities like alsactl.

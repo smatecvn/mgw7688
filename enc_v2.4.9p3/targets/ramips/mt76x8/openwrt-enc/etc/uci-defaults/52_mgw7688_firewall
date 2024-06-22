@@ -1,0 +1,13 @@
+#!/bin/sh
+
+. /lib/functions.sh
+
+config_load firewall
+
+# Accept all connection via WAN interface
+uci set firewall.@zone[1].input='ACCEPT'
+uci commit firewall
+
+uci commit
+
+exit 0

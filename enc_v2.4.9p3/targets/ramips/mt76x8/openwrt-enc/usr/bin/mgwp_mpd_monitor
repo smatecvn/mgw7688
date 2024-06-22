@@ -1,0 +1,43 @@
+#!/bin/sh
+
+#Check if mpd is run/stop
+
+MGWP_MPD_PID=$(pgrep -f /usr/bin/mpd)
+MGWP_MPD_PID_CNT=$(echo $MGWP_MPD_PID | awk '{ print NF}')
+
+if [[ "$MGWP_MPD_PID_CNT" -eq 0 ]]; then
+   logger "mpd_monitor: starting mpd"
+    /usr/bin/mpd --no-daemon /etc/mpd.conf &
+	sleep 3
+elif [[ "$MGWP_MPD_PID_CNT" -gt 1 ]]; then
+   i=0
+   for pid in $MGWP_MPD_PID
+   do
+	i=$((i+1))
+	if [[ "$i" -ge 2 ]]; then 
+		kill -9 $pid
+		logger "mpd_monitor: killing the process:$pid"
+	else 	
+	    logger "mpd_monitor: keep the process:$pid"
+	fi
+   done
+fi 
+
+MPC_STATE=$(timeout 5 mpc)
+
+if [ -n "$MPC_STATE" ]; then
+	logger "MPD is ok -> $MPC_STATE"
+else	
+	MGWP_MPD_PID=$(pgrep -f /usr/bin/mpd)
+	#MGWP_MPD_PID_CNT=$(echo $MGWP_MPD_PID | awk '{ print NF}')
+	logger "MPD timeout error -> Kill all mpd"
+	#Kill all MPD
+	for pid in $MGWP_MPD_PID
+	do
+		kill -9 $pid
+	done 
+	sleep 3
+	# Start mpd
+	logger "Start MPD again"
+	/usr/bin/mpd --no-daemon /etc/mpd.conf &	
+fi

@@ -1,0 +1,14 @@
+Package: python3-certifi
+Version: 2021.5.30-1
+Depends: libc, python3-light
+Source: feeds/packages/lang/python/python-certifi
+SourceName: python3-certifi
+License: MPL-2.0
+LicenseFiles: LICENSE
+Section: lang
+SourceDateEpoch: 1630942340
+Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 144008
+Description:  Certifi is a carefully curated collection of Root Certificates for validating the
+ trustworthiness of SSL certificates while verifying the identity of TLS hosts.

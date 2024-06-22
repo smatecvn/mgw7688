@@ -1,0 +1,13 @@
+Package: alsa-utils
+Version: 1.2.4-1
+Depends: libc, alsa-lib, alsa-ucm-conf, libncursesw6, libpthread
+Source: feeds/packages/sound/alsa-utils
+SourceName: alsa-utils
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Section: sound
+SourceDateEpoch: 1606285911
+Maintainer: Ted Hess <thess@kitschensync.net>
+Architecture: mipsel_24kc
+Installed-Size: 118840
+Description:  ALSA (Advanced Linux Sound Architecture) utilities
