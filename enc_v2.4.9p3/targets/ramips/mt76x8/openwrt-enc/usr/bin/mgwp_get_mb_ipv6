@@ -1,4 +1,0 @@
-#!/bin/sh
-
-ipv6=$(ifconfig | grep -E 'inet6.*Global|Global.*inet6' | grep '/64' | awk '{print $3}' | sed 's/\// /' | awk '{print $1}')
-echo $ipv6

@@ -1,3 +1,0 @@
-/etc/modules-boot.d/sdhci-mt7620
-/etc/modules.d/sdhci-mt7620
-/lib/modules/5.4.238/mtk_sd.ko
