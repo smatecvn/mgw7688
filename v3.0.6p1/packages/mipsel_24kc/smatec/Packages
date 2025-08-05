@@ -1,0 +1,67 @@
+Package: mgw7688-os
+Version: 1
+Depends: libc, curl, strace, coreutils, coreutils-stty, coreutils-timeout, avahi-dbus-daemon, kmod-fs-vfat, dosfstools, rpcd, rpcd-mod-iwinfo, rpcd-mod-rpcsys, kmod-mt76, picocom, kmod-i2c-core, kmod-i2c-mt7628, cgi-io, uboot-envtools, kmod-sdhci-mt7620, kmod-usb-storage, usbutils, block-mount, kmod-video-core, kmod-video-uvc, kmod-sound-core, kmod-sound-mt7620, madplay, alsa-utils, comgt, usb-modeswitch, kmod-mii, kmod-usb-wdm, kmod-usb-net-qmi-wwan, kmod-usb-net-rndis, uqmi, kmod-usb-serial, kmod-usb-serial-option, kmod-usb-serial-wwan, python3, libmraa-python3, python3-pyaudio, python3-alsaaudio, python3-paho-mqtt, ffmpeg, ffprobe, mpd, mpc, python3-flask, python3-requests, python3-flask-httpauth, python3-mgw, htop, tcpdump-mini, netcat, python3-pyserial, jq
+Section: utils
+Architecture: mipsel_24kc
+Installed-Size: 27415
+Filename: mgw7688-os_1_mipsel_24kc.ipk
+Size: 28441
+SHA256sum: 6c8451072a518cec1b56c319a961ec68038a383afd55b137087af6ce5a1e49ca
+Description:  MGW7688 Board Support Package
+
+Package: python3-alsaaudio
+Version: 0.8.4-1
+Depends: libc, python3, alsa-lib
+License: Python Software Foundation License (PSF)
+Section: lang
+CPE-ID: cpe:/a:larsimmisch:pyalsaaudio
+Architecture: mipsel_24kc
+Installed-Size: 15942
+Filename: python3-alsaaudio_0.8.4-1_mipsel_24kc.ipk
+Size: 16716
+SHA256sum: f3579f7c1b0e7e2d7848f1e361ea5109ad9d31d5404f4a6a8d1b2deb590d0679
+Description:  ALSA wrappers for Python
+ .
+ (Variant for Python3)
+
+Package: python3-mgw
+Version: mira_3.0.6-1
+Depends: libc, python3
+License: Python Software Foundation License (PSF)
+Section: lang
+CPE-ID: cpe:/a:smt:mgw
+Architecture: mipsel_24kc
+Installed-Size: 157327
+Filename: python3-mgw_mira_3.0.6-1_mipsel_24kc.ipk
+Size: 158265
+SHA256sum: 4de62a097337ac41f936900703738dc115595c881daf05d545f504784a75cf8d
+Description:  Smatec M-Gateway
+ .
+ (Variant for Python3)
+
+Package: python3-pyaudio
+Version: 0.2.11-1
+Depends: libc, python3, portaudio, python3-setuptools
+License: MIT License
+Section: lang
+CPE-ID: cpe:/a:hubert:pyaudio
+Architecture: mipsel_24kc
+Installed-Size: 19367
+Filename: python3-pyaudio_0.2.11-1_mipsel_24kc.ipk
+Size: 20223
+SHA256sum: 2277d44868defde470247c4a0b75fe682981c0a448842ada26af23e9d698e6bb
+Description:  
+ .
+ (Variant for Python3)
+
+Package: sms-modem
+Version: 1
+Depends: libc, curl, strace, coreutils, coreutils-stty, coreutils-timeout, avahi-dbus-daemon, kmod-fs-vfat, dosfstools, rpcd, rpcd-mod-iwinfo, rpcd-mod-rpcsys, kmod-mt76, picocom, kmod-i2c-core, kmod-i2c-mt7628, cgi-io, uboot-envtools, kmod-sdhci-mt7620, kmod-usb-storage, usbutils, block-mount, kmod-video-core, kmod-video-uvc, kmod-sound-core, kmod-sound-mt7620, madplay, alsa-utils, comgt, usb-modeswitch, kmod-mii, kmod-usb-wdm, kmod-usb-net-qmi-wwan, kmod-usb-net-rndis, uqmi, kmod-usb-serial, kmod-usb-serial-option, kmod-usb-serial-wwan, htop, tcpdump-mini, netcat, jq
+Section: utils
+Architecture: mipsel_24kc
+Installed-Size: 2237234
+Filename: sms-modem_1_mipsel_24kc.ipk
+Size: 2232347
+SHA256sum: 194a2137aeb7a1ea5ba92daecbbfadf634fa85c44a4764914f006a270280ae67
+Description:  AI7688H Based SMS Modem Board Support Package
+
