@@ -3,10 +3,10 @@ Version: 1
 Depends: libc, curl, strace, coreutils, coreutils-stty, coreutils-timeout, lscpu, avahi-dbus-daemon, kmod-fs-vfat, kmod-fs-ext4, dosfstools, rpcd, rpcd-mod-iwinfo, rpcd-mod-rpcsys, kmod-mt76, picocom, kmod-i2c-core, kmod-i2c-mt7628, cgi-io, uboot-envtools, kmod-sdhci-mt7620, kmod-usb-storage, usbutils, block-mount, kmod-sound-core, kmod-sound-mt7620, madplay, alsa-utils, kmod-sound-mt762x-wm8960, comgt, usb-modeswitch, kmod-mii, kmod-usb-wdm, kmod-usb-net-qmi-wwan, kmod-usb-net-rndis, uqmi, kmod-usb-serial, kmod-usb-serial-option, kmod-usb-serial-wwan, python3, libmraa-python3, python3-pyaudio, python3-paho-mqtt, ffmpeg, ffprobe, mpd, mpc, python3-requests, python3-mgw, htop, tcpdump-mini, netcat, python3-pyserial, jq, aria2, fdisk, luci, e2fsprogs, lsblk, speedtest-netperf, kmod-rtc-pcf8563, i2c-tools, python3-smbus, ncat, tailscale
 Section: utils
 Architecture: mipsel_24kc
-Installed-Size: 27415
+Installed-Size: 27529
 Filename: mgw7688-os_1_mipsel_24kc.ipk
-Size: 28506
-SHA256sum: bcdc3cdedc1c8fd5f2a6d4ddd162bb42f2d076caa99cf31e2622c5c9ed932edc
+Size: 28613
+SHA256sum: 8ed6022b29097bcc6d2d0842d2a3c81b0173f7bd5266b30075f42e26c86f9497
 Description:  MGW7688 Board Support Package
 
 Package: python3-alsaaudio
@@ -25,16 +25,16 @@ Description:  ALSA wrappers for Python
  (Variant for Python3)
 
 Package: python3-mgw
-Version: mira_3.0.6-1
+Version: enc_3.0.5p3-1
 Depends: libc, python3
 License: Python Software Foundation License (PSF)
 Section: lang
 CPE-ID: cpe:/a:smt:mgw
 Architecture: mipsel_24kc
 Installed-Size: 153612
-Filename: python3-mgw_mira_3.0.6-1_mipsel_24kc.ipk
-Size: 154604
-SHA256sum: 9a4255105a96d41d70d4545c320f613db9d7a9469c0584d695e6d09de8880c37
+Filename: python3-mgw_enc_3.0.5p3-1_mipsel_24kc.ipk
+Size: 154605
+SHA256sum: e85923bd5e099f08104298a8423470375c1977a011fd00307cf5b1ef3db23be1
 Description:  Smatec M-Gateway
  .
  (Variant for Python3)

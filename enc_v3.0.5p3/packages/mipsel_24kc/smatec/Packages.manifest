@@ -6,10 +6,10 @@ SourceName: mgw7688-os
 Section: utils
 SourceDateEpoch: 1725432219
 Architecture: mipsel_24kc
-Installed-Size: 27415
+Installed-Size: 27529
 Filename: mgw7688-os_1_mipsel_24kc.ipk
-Size: 28506
-SHA256sum: bcdc3cdedc1c8fd5f2a6d4ddd162bb42f2d076caa99cf31e2622c5c9ed932edc
+Size: 28613
+SHA256sum: 8ed6022b29097bcc6d2d0842d2a3c81b0173f7bd5266b30075f42e26c86f9497
 Description:  MGW7688 Board Support Package
 
 Package: python3-alsaaudio
@@ -33,7 +33,7 @@ Description:  ALSA wrappers for Python
  (Variant for Python3)
 
 Package: python3-mgw
-Version: mira_3.0.6-1
+Version: enc_3.0.5p3-1
 Depends: libc, python3
 Source: /home/user/archive-master/smatec-enc/python-mgw
 SourceName: python3-mgw
@@ -45,9 +45,9 @@ CPE-ID: cpe:/a:smt:mgw
 Maintainer: Nguyen Hong Son <sonnh911@gmail.com>
 Architecture: mipsel_24kc
 Installed-Size: 153612
-Filename: python3-mgw_mira_3.0.6-1_mipsel_24kc.ipk
-Size: 154604
-SHA256sum: 9a4255105a96d41d70d4545c320f613db9d7a9469c0584d695e6d09de8880c37
+Filename: python3-mgw_enc_3.0.5p3-1_mipsel_24kc.ipk
+Size: 154605
+SHA256sum: e85923bd5e099f08104298a8423470375c1977a011fd00307cf5b1ef3db23be1
 Description:  Smatec M-Gateway
  .
  (Variant for Python3)
