@@ -72,9 +72,7 @@ FILE="${TESTER}_${RANDOM}_${MGWID}.csv"
 
 echo "Create data file: ${FILE}"
 touch $FILE
-if [ $SIM == 1 ]
-
-then 
+if [ $SIM == 1 ]; then 
    echo "${DATE},${HOSTNAME},'${MGWID},'${VCODE},'${IMSI},eSIM,'${IMEI},${MODEL},${REVISION},'2.6,'${FW_VERSION}, ${OS_NAME} ${OS_VERSION},'1.2,'1.01" > $FILE
 else
    echo "${DATE},${HOSTNAME},'${MGWID},'${VCODE},'${IMSI},nanoSIM,'${IMEI},${MODEL},${REVISION},'2.6,'$FW_VERSION,${OS_NAME} ${OS_VERSION},'1.2,'1.01" > $FILE
