@@ -44,10 +44,10 @@ SourceDateEpoch: 1641374271
 CPE-ID: cpe:/a:smt:mgw
 Maintainer: Nguyen Hong Son <sonnh911@gmail.com>
 Architecture: mipsel_24kc
-Installed-Size: 157327
+Installed-Size: 157340
 Filename: python3-mgw_mira_3.0.6-1_mipsel_24kc.ipk
-Size: 158265
-SHA256sum: 4de62a097337ac41f936900703738dc115595c881daf05d545f504784a75cf8d
+Size: 158277
+SHA256sum: 63632e0c6177a16a045eb776dd978b8dd395734a991f27d19dd72173ee680561
 Description:  Smatec M-Gateway
  .
  (Variant for Python3)
